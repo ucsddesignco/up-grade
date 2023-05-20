@@ -1,0 +1,116 @@
+// Device Media Queries // 
+$mobile: 600px;
+$desktop: 960px;
+
+// Paddings //
+$desktop-padding: 8vw;
+$mobile-padding: 10vw;
+
+// Colors //
+$text-color: black;
+$alt-color: #828282;
+$primary-color: #80D8FF;
+
+// Background Color //
+$inside-background-color: #F3F3F3;
+$outside-background-color: #EBEBEB;
+$background-color: radial-gradient($inside-background-color, $outside-background-color);
+
+// Fonts //
+$heading-font: 'MBA Slice Mono', sans-serif;
+$subheading-font: "Neue Haas Display Light", sans-serif;
+$p-font: "Neue Haas Display Medium", sans-serif;
+
+// Heights //
+$navbar-height: 100px;
+
+// Importing Fonts //
+@font-face {
+    font-family: "MBA Slice Mono";
+    src: url("../../src/assets/fonts/MBASLICEMONO-REGULAR.OTF"); 
+}
+  
+@font-face {
+    font-family: "Neue Haas Display Light";
+    src: url("../../src/assets/fonts/NeueHaasDisplayLight.ttf"); 
+}
+
+@font-face {
+    font-family: "Neue Haas Display Medium";
+    src: url("../../src/assets/fonts/NeueHaasDisplayMedium.ttf"); 
+}
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;    
+}
+
+h2, h3, h4, h5, p {
+    color: $text-color;
+    margin: 0;
+}
+
+h1 {
+    font-family: $heading-font;
+    font-size: min(3.8svw, 2.5rem);
+    line-height: 150%;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+h3 {
+    font-family: $heading-font;
+    font-size: min(1.5svw, 1.5rem);
+    line-height: 150%;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 1rem;
+        line-height: 130%;
+    }
+}
+
+h4 {
+    font-family: $subheading-font;
+    font-size: min(1.5svw, 1.2rem);
+    line-height: 150%;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 1.125rem;
+    }
+}
+
+h5 {
+    font-family: $heading-font;
+    font-size: min(1.25svw, 1rem);
+    line-height: 130%;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 0.875rem;
+    }
+}
+
+p {
+    font-family: $p-font;
+    font-size: min(1.1svw, 0.875rem);
+    line-height: 148%;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 0.875rem;
+        line-height: 130%;
+    }
+}
+
+a {
+    font-family: $heading-font;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
