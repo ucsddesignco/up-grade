@@ -1,0 +1,38 @@
+// Device Media Queries // 
+$mobile: 600px;
+$desktop: 960px;
+
+// Paddings //
+$desktop-padding: 8vw;
+$mobile-padding: 10vw;
+
+// Colors //
+$text-color: black;
+$alt-color: #828282;
+$primary-color: #19B000;
+
+// Background Color //
+$inside-background-color: #F3F3F3;
+$outside-background-color: #EBEBEB;
+$background-color: radial-gradient($inside-background-color, $outside-background-color);
+
+// Fonts //
+$heading-font: 'MBA Slice Mono', sans-serif;
+$subheading-font: "Neue Haas Display Light", sans-serif;
+$p-font: "Neue Haas Display Medium", sans-serif;
+
+// Importing Fonts //
+@font-face {
+    font-family: "MBA Slice Mono";
+    src: url("assets/fonts/MBASLICEMONO-REGULAR.OTF"); 
+}
+  
+@font-face {
+    font-family: "Neue Haas Display Light";
+    src: url("assets/fonts/NeueHaasDisplayLight.ttf"); 
+}
+
+@font-face {
+    font-family: "Neue Haas Display Medium";
+    src: url("assets/fonts/NeueHaasDisplayMedium.ttf"); 
+}

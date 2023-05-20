@@ -1,0 +1,70 @@
+@use '../../styles/var';
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+
+  .logo {
+    font-family: var.$heading-font;
+    font-size: min(5vw, 3rem);
+    color: var.$primary-color;
+    text-decoration: none;  
+  }
+
+  .right {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    button {
+      margin-left: 3rem;
+      font-family: var.$subheading-font;
+      font-size: 20px;
+      color: var.$primary-color;
+      text-transform: uppercase;
+
+      &:not(.apply) {
+        &:hover {
+          cursor: pointer;
+          opacity: 0.4;
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    .apply-container {
+      display: inline-block;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+
+        .star {
+          transform: rotate(-60deg);
+        }
+      }
+    }
+
+    .apply {
+      color: white;
+      background-color: var.$primary-color;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+    }
+    .star {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: -15px;
+      right: -5px;
+      transition: transform 0.3s;
+    }
+  }
+
+  button {
+    all: unset;
+    transition: all 0.3s;
+  }
+}

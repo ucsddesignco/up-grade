@@ -2,7 +2,7 @@ import './styles.scss'
 
 const Overview = () => {
     return (
-        <div>
+        <div className='container'>
             <h1>Overview</h1>
         </div>
     )
