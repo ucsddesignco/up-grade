@@ -1,7 +1,7 @@
 import './styles.scss'
 
 import Heart from '../../assets/footer/heart.svg';
-import DesignCo from '../../assets/footer/DesignCo.svg';
+import DesignCo from '../../assets/footer/designco.svg';
 
 
 const Footer = () => {
