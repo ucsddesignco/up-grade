@@ -1,0 +1,150 @@
+@use '../../styles/var';
+
+.faq-container {
+  z-index: 0;
+  background-color: var.$background;
+  height: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  > .section-one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+
+    > .left {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: flex-end;
+      width: 45vw;
+      
+
+      > h1 {
+        font-family: var.$heading-font;
+        color: var.$primary-color;
+        font-size: clamp(5rem, 40vw, 8rem);
+        font-weight: lighter;
+        z-index: 2;
+      }
+      > img {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        transform: translate(-70px, 390px);
+        z-index: 1;
+      }
+    }
+
+    > .right {
+      width: 45vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+
+      > .shape-one {
+        width: 54px;
+        height: auto;
+      }
+
+      > .shape-one {
+        transform: translate(calc(23vw - 480px), 110px);
+      }
+
+      > .shape-two {
+        transform: translate(calc(23vw - 400px), 40px);
+        z-index: 2;
+
+      }
+
+      > .shape-three {
+        position: absolute;
+        transform: translate(calc(23vw - 240px), 150px);
+        z-index: 1;
+      }
+
+      > .shape-four {
+        transform: translate(calc(23vw - 200px), -80px);
+      }
+
+
+    }
+
+  }
+
+  > .section-two-accordion {
+    width: 90vw;
+    z-index: 3;
+
+    .accordion {
+      background-color: var.$background;
+      margin-bottom: 8rem;
+      font-family: var.$p-font;
+      
+      .accordion-item {
+        border: 3px solid green;
+        display: block;
+        width: 90vw;
+
+        .accordion-title {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 4rem 0 4rem;
+          height: clamp(60px, 12vw, 120px);
+          font-weight: 100;
+          margin-bottom: 0px;
+
+          .title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+
+          }
+          .symbol {
+            font-size: 4rem;
+            font-weight: lighter;
+            width: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .accordion-content {
+          font-family: var.$p-font;
+          font-size: 1.5rem;
+          padding: 0 4rem 0rem 4rem;
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, padding-bottom 0.4s ease-in-out;
+          text-align: justify;
+        }
+
+        .fade-in {
+          max-height: 100vh;
+          opacity: 1;
+          padding: 0 4rem 3rem 4rem;
+          font-family: var.$p-font;
+          font-size: 1.5rem;
+        }
+        
+      
+      }
+      
+      
+      .accordion-item:nth-child(n+2) {
+        margin-top: -3px;
+    }
+      
+    }
+  }
+}
