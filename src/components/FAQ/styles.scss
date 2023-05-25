@@ -32,12 +32,16 @@
         font-weight: lighter;
         z-index: 2;
       }
-      > img {
+      > .desktop-squiggle {
+        display: block;
         position: absolute;
         width: 400px;
         height: auto;
         transform: translate(-70px, 390px);
         z-index: 1;
+      }
+      > .mobile-squiggle {
+        display: none;
       }
     }
 
@@ -168,7 +172,7 @@
               position: absolute;
               height: 40px;
               width: 4px;
-              border: 2px solid green;
+              border: 2px solid #19B000;
               animation: spinOutVert 0.4s ease-in-out;
               animation-fill-mode: forwards;
             }
@@ -225,4 +229,106 @@
       
     }
   }
+}
+
+@media screen and (max-width: 800px) {
+  .faq-container {
+    .section-one {
+      height: 18vh;
+      .left {
+        h1 {
+          font-size: 2.25rem;
+        }
+        width: 40vw;
+        > .desktop-squiggle {
+          display: none;
+        }
+        > .mobile-squiggle {
+          position: absolute;
+          display: block;
+          width: 100px;
+          
+          transform: translate(-36px, calc(20vw + 10px));
+          z-index: 1;
+        }
+      }
+      .right {
+        width: 40vw;
+        .shape-one-cont {
+          width: 12px;
+          transform: translate(-60px, calc(50vw - 150px));
+        }
+        .shape-two-cont {
+          transform: translate(-50px, calc(50vw - 170px));
+          width: 40px;
+
+          .shape-two {
+            animation-delay: .7s;
+          }
+
+        }
+        .shape-three {
+          width: 120px;
+          transform: translate(0px, calc(50vw - 150px));
+
+        }
+
+        .shape-four-cont {
+          width: 12px;
+          transform: translate(14px, calc(50vw - 200px));
+          .shape-four {
+            animation-delay: 0.3s;
+          }
+        }
+
+      }
+      
+    }
+    > .section-two-accordion {
+      width: 100vw;
+      > .accordion {
+        > .accordion-item {
+          border-top: 2px solid #19B000;
+          border-bottom: 2px solid #19B000;
+          border-left: none;
+          border-right: none;
+          width: 100vw;
+
+          > .accordion-title {
+            padding: 0 2rem 0 2rem;
+            > .title {
+              font-size: 0.85rem;
+            }
+            .symbol {
+              .symbolvert {
+                height: 20px;
+                width: 1px;
+                border: 1px solid #19B000;
+                
+              }
+  
+              .symbolhori {
+                height: 1px;
+                width: 20px;
+                border: 1px solid #19B000;
+              }
+
+            }
+          }
+          > .accordion-content {
+            font-size: 0.8rem;  
+            padding: 0 2rem 0 2rem;
+          }
+          .fade-in {
+            padding: 0 2rem 1.5rem 2rem;
+          }
+        }
+        .accordion-item:nth-child(n+2) {
+          margin-top: -2px;
+      }
+      }
+      
+    }
+  }
+  
 }

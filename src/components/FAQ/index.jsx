@@ -6,6 +6,7 @@ import Shape from "../../assets/faq/shape.png";
 import Message from "../../assets/faq/message.png";
 import Star from "../../assets/faq/star.png";
 import Window from "../../assets/faq/window.png";
+import Squiggle from "../../assets/faq/squiggle.svg"
 
 import Plus from "../../assets/faq/plus.svg";
 import Minus from "../../assets/faq/minus.svg";
@@ -63,7 +64,8 @@ const FAQ = () => {
             <div className="section-one">
                 <div className='left'>
                     <h1>FAQ</h1>
-                    <img src={Shape} alt="background shape"/>
+                    <img src={Shape} className="desktop-squiggle" alt="background shape"/>
+                    <img src={Squiggle} className="mobile-squiggle" alt="background shape"/>
                 </div>
                 <div className='right'>
                     <div className='shape-one-cont'>
