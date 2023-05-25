@@ -127,21 +127,73 @@
             justify-content: center;
             transition: transform 0.4s ease-in-out;
 
-          }
-
-          .symbol.open {
-            transition: transform 0.4s ease-in-out;
-            transform: rotate(135deg);
-          }
-
-
-          @keyframes spin {
-
-            50% {
-              transform: rotate(135deg);
+            @keyframes spinInVert {
+              100% {
+                transform: rotate(90deg);
+              }
+              
             }
-            
+            @keyframes spinInHori {
+
+  
+              100% {
+                transform: rotate(90deg);
+                opacity: 0;
+              }
+              
+            }
+            @keyframes spinOutVert {
+              
+              0% {
+                opacity: 0;
+              }
+  
+              100% {
+                transform: rotate(-90deg);
+                opacity: 1;
+              }
+            }
+            @keyframes spinOutHori {
+
+              
+  
+              100% {
+                transform: rotate(-90deg);
+                opacity: 1;
+              }
+              
+            }
+
+            .symbolvert {
+              position: absolute;
+              height: 40px;
+              width: 4px;
+              border: 2px solid green;
+              animation: spinOutVert 0.4s ease-in-out;
+              animation-fill-mode: forwards;
+            }
+
+            .symbolhori {
+              position: absolute;
+              height: 4px;
+              width: 40px;
+              border: 2px solid green;
+              animation: spinOutHori 0.4s ease-in-out;
+              animation-fill-mode: forwards;
+            }
+
+            .symbolvert.open {
+              animation: spinInVert 0.4s ease-in-out;
+              animation-fill-mode: forwards;
+            }
+            .symbolhori.open {
+              animation: spinInHori 0.4s ease-in-out;
+              animation-fill-mode: forwards;
+            }
+
           }
+
+          
         }
 
         .accordion-content {

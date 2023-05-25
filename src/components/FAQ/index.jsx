@@ -85,7 +85,10 @@ const FAQ = () => {
                         <div className='accordion-item'>
                             <div className='accordion-title' onClick={()=> handleClick(index)}>
                                 <div className='title'>{item.title}</div>
-                                <div className={`symbol ${index === activeIndex ? 'open' : ' '}`}>{<img src={Plus}/>}</div>
+                                <div className="symbol">{/*<img src={Plus}/>*/}
+                                    <div className={`symbolvert ${index === activeIndex ? 'open' : ' '}`}></div>
+                                    <div className={`symbolhori ${index === activeIndex ? 'open' : ' '}`}></div>
+                                </div>
                                {/*<div className="symbol">{<img src={Plus}/>}</div>*/}
                             </div>
                             <div
