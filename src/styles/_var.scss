@@ -43,3 +43,24 @@ $link-font: "NB International Mono", sans-serif;
     font-family: "NB International Mono";
     src: url("assets/fonts/NB-Internatioinal-Mono.ttf")
 }
+
+// Animations
+
+@keyframes float1 {
+    50% {
+        transform: translateY(-8px) rotate(-4deg);
+    }
+
+}
+@keyframes float2 {
+    50% {
+        transform: translateY(-6px) rotate(3deg);
+    }
+
+}
+
+@keyframes float3 {
+    50% {
+        transform: translateY(-8px) rotate(-2deg);
+    }
+}

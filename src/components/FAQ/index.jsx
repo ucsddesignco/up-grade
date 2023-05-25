@@ -66,11 +66,18 @@ const FAQ = () => {
                     <img src={Shape} alt="background shape"/>
                 </div>
                 <div className='right'>
-                    <img src={Star} className="shape-one" alt="background star"/>
-                    <img src={Message} className="shape-two" alt="background message"/>
+                    <div className='shape-one-cont'>
+                        <img src={Star} className="shape-one" alt="background star"/>
+                    </div>
+                    <div className='shape-two-cont'>
+                        <img src={Message} className="shape-two" alt="background message"/>
+                    </div>
                     <img src={Window} className="shape-three" alt="background window"/>
-                    <img src={Star} className="shape-four" alt="background star"/>
+                    <div className='shape-four-cont'>
+                        <img src={Star} className="shape-four" alt="background star"/>
+                    </div>
                 </div>
+                    
             </div>
             <div className='section-two-accordion'>
                 <div className="accordion">
@@ -78,7 +85,8 @@ const FAQ = () => {
                         <div className='accordion-item'>
                             <div className='accordion-title' onClick={()=> handleClick(index)}>
                                 <div className='title'>{item.title}</div>
-                                <div className='symbol'>{index === activeIndex ? <img src={Minus}/> : <img src={Plus}/>}</div>
+                                <div className={`symbol ${index === activeIndex ? 'open' : ' '}`}>{<img src={Plus}/>}</div>
+                               {/*<div className="symbol">{<img src={Plus}/>}</div>*/}
                             </div>
                             <div
                                 className={`accordion-content ${index === activeIndex ? 'fade-in' : ''}`}
