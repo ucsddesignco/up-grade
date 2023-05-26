@@ -7,7 +7,7 @@ const Overview = () => {
     <div className="subsection overview">
       <h2>Overview</h2>
       <Columns
-        className="subsection--columns"
+        className="subsection--columns overview--columns"
         count={2}
         collapseBreakpoint={0}
         space={[80, 0]}
