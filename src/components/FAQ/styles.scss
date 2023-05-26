@@ -31,6 +31,7 @@
         font-size: clamp(5rem, 40vw, 8rem);
         font-weight: lighter;
         z-index: 2;
+        stroke: var.$background 4px;
       }
       > .desktop-squiggle {
         display: block;
