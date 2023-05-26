@@ -58,7 +58,8 @@
         height: auto;
         transform: translate(calc(23vw - 480px), 110px);
         > .shape-one {
-          animation: float1 4s ease-in-out infinite;
+          animation: float1 3.7s ease-in-out infinite;
+          animation-delay: 0.1s;
         }
       }
 
@@ -70,7 +71,8 @@
 
         >.shape-two {
           animation-delay: 1s;
-          animation: float2 4s ease-in-out infinite;
+          animation: float2 5s ease-in-out infinite;
+          animation-delay: 0.7s;
         }
 
       }
@@ -84,7 +86,8 @@
       > .shape-four-cont {
         transform: translate(calc(23vw - 200px), -80px);
         .shape-four {
-          animation: float3 4s ease-in-out infinite;
+          animation: float3 4.2s ease-in-out infinite;
+          animation-delay: 0.3s;
         }
       }
 
@@ -262,10 +265,6 @@
           transform: translate(-50px, calc(50vw - 170px));
           width: 40px;
 
-          .shape-two {
-            animation-delay: .7s;
-          }
-
         }
         .shape-three {
           width: 120px;
@@ -276,9 +275,6 @@
         .shape-four-cont {
           width: 12px;
           transform: translate(14px, calc(50vw - 200px));
-          .shape-four {
-            animation-delay: 0.3s;
-          }
         }
 
       }
