@@ -103,7 +103,7 @@
       font-family: var.$p-font;
       
       .accordion-item {
-        border: 3px solid green;
+        border: 3px solid var.$primary-color;
         display: block;
         width: 90vw;
 
@@ -172,7 +172,7 @@
               position: absolute;
               height: 40px;
               width: 4px;
-              border: 2px solid #19B000;
+              border: 2px solid var.$primary-color;
               animation: spinOutVert 0.4s ease-in-out;
               animation-fill-mode: forwards;
             }
@@ -181,7 +181,7 @@
               position: absolute;
               height: 4px;
               width: 40px;
-              border: 2px solid green;
+              border: 2px solid var.$primary-color;
               animation: spinOutHori 0.4s ease-in-out;
               animation-fill-mode: forwards;
             }
@@ -289,8 +289,8 @@
       > .accordion {
         margin-bottom: 2rem;
         > .accordion-item {
-          border-top: 2px solid #19B000;
-          border-bottom: 2px solid #19B000;
+          border-top: 2px solid var.$primary-color;
+          border-bottom: 2px solid var.$primary-color;
           border-left: none;
           border-right: none;
           width: 100vw;
