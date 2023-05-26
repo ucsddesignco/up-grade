@@ -3,6 +3,21 @@ import Columns from "../../libraryComponents/Columns";
 import React from "react";
 
 const Overview = () => {
+  const bullet = (
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 43 43"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M21.3843 0.0449219V21.2476M21.3843 42.4502V21.2476M21.3843 21.2476H0.362305M21.3843 21.2476H42.5516"
+        stroke="#19B000"
+        stroke-width="3"
+      />
+    </svg>
+  );
   return (
     <div className="subsection overview">
       <div
@@ -39,58 +54,23 @@ const Overview = () => {
         <Columns.Column>
           <ul>
             <li>
-              <div className="overview--bulet-wrapper">
-                <img
-                  className="central-themes--grid-icon"
-                  src="https://placehold.co/150x150?text=PLACEHOLDER"
-                  alt=""
-                  width="100%"
-                />
-              </div>
+              <div className="overview--bulet-wrapper">{bullet}</div>
               July 1st - Sept 9th
             </li>
             <li>
-              <div className="overview--bulet-wrapper">
-                <img
-                  className="central-themes--grid-icon"
-                  src="https://placehold.co/150x150?text=PLACEHOLDER"
-                  alt=""
-                  width="100%"
-                />
-              </div>
+              <div className="overview--bulet-wrapper">{bullet}</div>
               Network with industry professionals
             </li>
             <li>
-              <div className="overview--bulet-wrapper">
-                <img
-                  className="central-themes--grid-icon"
-                  src="https://placehold.co/150x150?text=PLACEHOLDER"
-                  alt=""
-                  width="100%"
-                />
-              </div>
+              <div className="overview--bulet-wrapper">{bullet}</div>
               Work alongside nonprofits
             </li>
             <li>
-              <div className="overview--bulet-wrapper">
-                <img
-                  className="central-themes--grid-icon"
-                  src="https://placehold.co/150x150?text=PLACEHOLDER"
-                  alt=""
-                  width="100%"
-                />
-              </div>
+              <div className="overview--bulet-wrapper">{bullet}</div>
               Mentor-led workshops
             </li>
             <li>
-              <div className="overview--bulet-wrapper">
-                <img
-                  className="central-themes--grid-icon"
-                  src="https://placehold.co/150x150?text=PLACEHOLDER"
-                  alt=""
-                  width="100%"
-                />
-              </div>
+              <div className="overview--bulet-wrapper">{bullet}</div>
               Weekly team meetngs
             </li>
           </ul>
