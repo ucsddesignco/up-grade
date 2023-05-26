@@ -4,26 +4,110 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
   padding: 60px;
+  z-index: 99;
+
+  @media screen and (max-width: 705px) {
+    padding: 30px;
+  }
 
   .logo {
+    display: block;
     font-family: var.$heading-font;
-    font-size: min(5vw, 3rem);
+    font-size: 3rem;
     color: var.$primary-color;
-    text-decoration: none;  
+    text-decoration: none;
+    transition: all 0.3s;
+    letter-spacing: 3px;
+
+    @media screen and (max-width: 900px) {
+      font-size: min(4vw, 3rem);
+    }
+
+    @media screen and (max-width: 705px) {
+      font-size: min(6vw, 3rem);
+    }
+
+    &:hover {
+      opacity: 0.4;
+      transform: scale(0.9);
+    }
   }
 
   .right {
-    @media screen and (max-width: 800px) {
+    ul {
+      list-style-type: none;
+      display: flex;
+      padding-left: 0;
+      background-color: white;
+      align-items: center;
+      z-index: 1;
+
+      @media screen and (max-width: 705px) {
+        margin-inline: auto;
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-start;
+        padding-left: 5rem;
+        inset: 0;
+        margin-top: calc(2 * 30px + 30px);
+        padding-top: 5rem;
+
+        li {
+          margin-bottom: 4rem;
+          button {
+            font-size: min(5vw, 4rem);
+          }
+        }
+      }
+    }
+
+    .mobile-button {
       display: none;
+
+      @media screen and (max-width: 705px) {
+        display: block;
+
+        .close-icon {
+          display: none;
+        }
+
+        + ul {
+          display: none !important;
+        }
+
+        &[aria-expanded='true'] {
+          + ul {
+            display: flex !important;
+          }
+          .hamburger-icon {
+            display: none;
+          }
+
+          .close-icon {
+            display: block;
+          }
+        }
+      }
     }
 
     button {
       margin-left: 3rem;
       font-family: var.$subheading-font;
-      font-size: 20px;
+      font-size: min(1.5vw, 1.25rem);
+
       color: var.$primary-color;
       text-transform: uppercase;
+
+      @media screen and (max-width: 900px) {
+        font-size: min(1.75vw);
+      }
+
+      @media screen and (max-width: 705px) {
+        margin-left: 0;
+        font-size: min(1.5vw, 1.25rem);
+      }
 
       &:not(.apply) {
         &:hover {
@@ -52,6 +136,13 @@
       background-color: var.$primary-color;
       padding: 0.5rem 1.5rem;
       border-radius: 50px;
+      border: 1px solid white;
+
+      &:hover {
+        border: 1px solid var.$primary-color;
+        color: var.$primary-color;
+        background-color: white;
+      }
     }
     .star {
       width: 32px;
