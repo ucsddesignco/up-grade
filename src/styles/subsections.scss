@@ -1,0 +1,39 @@
+@use "./var";
+
+.subsection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin-bottom: 80px;
+  @media only screen and (max-width: var.$mobile) {
+    gap: calc(var(--space_mobile) * 1px);
+    margin-bottom: 60px;
+  }
+
+  p,
+  ul > li {
+    font-family: var.$p-font;
+    font-size: clamp(0.875rem, 2.5vw, 1.5rem);
+    line-height: 140%;
+  }
+
+  h2 {
+    font-family: var.$heading-font;
+    color: var.$primary-color;
+    font-size: clamp(2.5rem, 8vw, 8rem);
+  }
+
+  h3 {
+    font-family: var.$subheading-font;
+    color: var.$primary-color;
+    font-size: clamp(1rem, 3vw, 2.25rem);
+    text-transform: uppercase;
+  }
+}
+
+.subsection--columns {
+  margin-top: 44px;
+  @media only screen and (max-width: var.$mobile) {
+    margin-top: 30px;
+  }
+}

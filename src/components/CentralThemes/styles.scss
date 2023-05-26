@@ -1,0 +1,15 @@
+@use "../../styles/var";
+@use "../../styles/subsections.scss";
+
+.central-themes--grid {
+  display: grid;
+  grid-template-columns: repeat((5, 1fr));
+}
+
+.central-themes--grid-item {
+  grid-column: 2/-1;
+}
+
+.central-themes--grid-icon {
+  grid-column: 1/2;
+}

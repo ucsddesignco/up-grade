@@ -1,4 +1,4 @@
-// Device Media Queries // 
+// Device Media Queries //
 $mobile: 600px;
 $desktop: 960px;
 
@@ -9,30 +9,59 @@ $mobile-padding: 10vw;
 // Colors //
 $text-color: black;
 $alt-color: #828282;
-$primary-color: #19B000;
+$primary-color: #19b000;
 
 // Background Color //
-$inside-background-color: #F3F3F3;
-$outside-background-color: #EBEBEB;
-$background-color: radial-gradient($inside-background-color, $outside-background-color);
+$inside-background-color: #f3f3f3;
+$outside-background-color: #ebebeb;
+$background-color: radial-gradient(
+  $inside-background-color,
+  $outside-background-color
+);
+$background: #f2f4f1;
 
 // Fonts //
-$heading-font: 'MBA Slice Mono', sans-serif;
-$subheading-font: "Neue Haas Display Light", sans-serif;
-$p-font: "Neue Haas Display Medium", sans-serif;
+$heading-font: "MBA Slice Mono", sans-serif;
+$subheading-font: "Neue Haas Display Medium", sans-serif;
+$p-font: "Neue Haas Display Light", sans-serif;
+$link-font: "NB International Mono", sans-serif;
 
 // Importing Fonts //
 @font-face {
-    font-family: "MBA Slice Mono";
-    src: url("assets/fonts/MBASLICEMONO-REGULAR.OTF"); 
-}
-  
-@font-face {
-    font-family: "Neue Haas Display Light";
-    src: url("assets/fonts/NeueHaasDisplayLight.ttf"); 
+  font-family: "MBA Slice Mono";
+  src: url("assets/fonts/MBASLICEMONO-REGULAR.OTF");
 }
 
 @font-face {
-    font-family: "Neue Haas Display Medium";
-    src: url("assets/fonts/NeueHaasDisplayMedium.ttf"); 
+  font-family: "Neue Haas Display Light";
+  src: url("assets/fonts/NeueHaasDisplayLight.ttf");
+}
+
+@font-face {
+  font-family: "Neue Haas Display Medium";
+  src: url("assets/fonts/NeueHaasDisplayMedium.ttf");
+}
+
+@font-face {
+  font-family: "NB International Mono";
+  src: url("assets/fonts/NB-Internatioinal-Mono.ttf");
+}
+
+// Animations
+
+@keyframes float1 {
+  50% {
+    transform: translateY(-8px) rotate(-4deg);
+  }
+}
+@keyframes float2 {
+  50% {
+    transform: translateY(-6px) rotate(3deg);
+  }
+}
+
+@keyframes float3 {
+  50% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
 }
