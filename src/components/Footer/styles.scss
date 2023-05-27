@@ -1,0 +1,68 @@
+@use '../../styles/var';
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 3rem 6rem 3rem;
+
+  background-color: var.$background;
+  > .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .heart {
+      width: 24px ;
+    }
+    .design-co {
+      width: 160px;
+    }
+  }
+
+  > .right {
+
+    > a {
+      font-family: var.$link-font;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: #231F20;
+    }
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-container {
+    padding: 0 2rem 2rem 2rem;
+
+    .left {
+      width: 150px;
+      p {
+        font-size: 0.6rem;
+      }
+      .heart {
+        width: 12px;
+      }
+      .design-co {
+        width: 90px;
+
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > a {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}

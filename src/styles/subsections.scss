@@ -22,7 +22,7 @@
     font-size: clamp(0.875rem, 2.5vw, 1.5rem);
     line-height: 140%;
     color: var.$text-color;
-    background-color: var.$background-color;
+    background-color: var.$background;
   }
 
   h2 {
@@ -77,3 +77,4 @@
     transform: translateY(-8px) rotate(-2deg);
   }
 }
+

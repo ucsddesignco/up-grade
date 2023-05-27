@@ -7,6 +7,7 @@ import WhyApply from './components/WhyApply';
 import FAQ from './components/FAQ';
 import { useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const heroRef = useRef();
@@ -104,20 +105,25 @@ function App() {
       <div>
         <Hero />
       </div>
-      <div ref={whatIsUpgradeRef}>
-        <WhatIsUpgrade />
-      </div>
-      <div ref={overviewRef}>
-        <Overview />
-      </div>
-      <div ref={themesRef}>
-        <CentralThemes />
-      </div>
-      <div>
-        <WhyApply />
+      <div style={{ maxWidth: "100%", overflowX: "clip" }}>
+        <div ref={whatIsUpgradeRef}>
+          <WhatIsUpgrade />
+        </div>
+        <div ref={overviewRef}>
+          <Overview />
+        </div>
+        <div ref={themesRef}>
+          <CentralThemes />
+        </div>
+        <div>
+          <WhyApply />
+        </div>
       </div>
       <div ref={FAQRef}>
         <FAQ />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );

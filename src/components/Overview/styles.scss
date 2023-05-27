@@ -1,0 +1,32 @@
+@use "../../styles/var";
+@use "../../styles/subsections.scss";
+
+.overview {
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    .overview--bulet-wrapper {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+    @media screen and (max-width: 600px) {
+      gap: 12px;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+      .overview--bulet-wrapper {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

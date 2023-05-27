@@ -1,0 +1,23 @@
+@use "../../styles/var";
+@use "../../styles/subsections.scss";
+
+div.central-themes {
+  margin-top: clamp(92px, 10vw, 256px);
+
+  @media screen and (max-width: 600px) {
+    margin-top: 92px;
+  }
+}
+
+.central-themes--grid {
+  display: grid;
+  grid-template-columns: repeat((5, 1fr));
+}
+
+.central-themes--grid-item {
+  grid-column: 2/-1;
+}
+
+.central-themes--grid-icon {
+  grid-column: 1/2;
+}
