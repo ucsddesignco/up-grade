@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  padding: 60px;
+  background-color: var.$background-color;
+  padding: 60px 100px;
   z-index: 99;
 
   @media screen and (max-width: 705px) {
@@ -25,7 +25,7 @@
       font-size: min(4vw, 3rem);
     }
 
-    @media screen and (max-width: 705px) {
+    @media screen and (max-width: 850px) {
       font-size: min(6vw, 3rem);
     }
 
@@ -40,11 +40,11 @@
       list-style-type: none;
       display: flex;
       padding-left: 0;
-      background-color: white;
+      background-color: var.$background-color;
       align-items: center;
       z-index: 1;
 
-      @media screen and (max-width: 705px) {
+      @media screen and (max-width: 850px) {
         margin-inline: auto;
         flex-direction: column;
         position: absolute;
@@ -66,7 +66,7 @@
     .mobile-button {
       display: none;
 
-      @media screen and (max-width: 705px) {
+      @media screen and (max-width: 850px) {
         display: block;
 
         .close-icon {
@@ -95,6 +95,7 @@
     button {
       margin-left: 3rem;
       font-family: var.$subheading-font;
+      font-weight: 600;
       font-size: min(1.5vw, 1.25rem);
 
       color: var.$primary-color;
@@ -104,7 +105,7 @@
         font-size: min(1.75vw);
       }
 
-      @media screen and (max-width: 705px) {
+      @media screen and (max-width: 850px) {
         margin-left: 0;
         font-size: min(1.5vw, 1.25rem);
       }
@@ -132,16 +133,16 @@
     }
 
     .apply {
-      color: white;
+      color: var.$background-color;
       background-color: var.$primary-color;
       padding: 0.5rem 1.5rem;
       border-radius: 50px;
-      border: 1px solid white;
+      border: 2px solid var.$background-color;
 
       &:hover {
-        border: 1px solid var.$primary-color;
+        border: 2px solid var.$primary-color;
         color: var.$primary-color;
-        background-color: white;
+        background-color: var.$background-color;
       }
     }
     .star {

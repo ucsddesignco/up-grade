@@ -1,6 +1,62 @@
+@use '../../styles/var';
+
 .hero-container {
-  height: 100svh;
+  height: calc(100svh - 120px - 3rem);
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  @media screen and (max-width: 700px) {
+    height: 100%;
+  }
+
+  .center-text-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+
+    .dco-logo {
+      align-self: flex-start;
+      width: 25%;
+      margin-bottom: 1rem;
+
+      @media screen and (max-width: 700px) {
+        width: 30%;
+        margin-bottom: 0;
+      }
+    }
+    
+  }
+
+  .upgrade-text {
+    font-family: var.$heading-font;
+    font-size: calc(7rem + 3vw);
+    // font-size: max(calc(28rem - 50vw), 10rem);
+    font-weight: 100;
+    z-index: 1;
+    stroke: var.$background-color;
+    fill: var.$primary-color;
+    stroke-width: 10px;
+    paint-order: stroke fill;
+    top: 0;
+
+
+    @media screen and (max-width: 700px) {
+      height: 120px;
+      font-size: calc(5rem + 3vw);
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 80px;
+      font-size: calc(1rem + 12vw);
+    }
+  }
+
 
 }

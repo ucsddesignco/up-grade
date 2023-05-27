@@ -1,0 +1,73 @@
+@use '../../styles/var';
+@use '../../styles/subsections';
+
+.upgrade-computer-container {
+  margin-top: max(calc(6rem - 15vw), 20px);
+  // margin-top: calc(10rem - 5vw);
+  width: max(calc(42rem - 10vw), 47vw);
+  height: 462px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 700px) {
+    margin-top: -1rem;
+    width: min(calc(30rem - 5vw), 80vw);
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-top: calc(20vw - 10rem);
+    width: min(calc(30rem - 5vw), 80vw);
+  }
+  
+  .upgrade-computer {
+    width: max(calc(42rem - 10vw), 47vw);
+    position: absolute;
+    inset: 0;
+
+    @media screen and (max-width: 700px) {
+      width: min(calc(30rem - 5vw), 80vw);
+    }
+  }
+  @keyframes computerFloat {
+    50% {
+      transform: translateY(-4px) rotate(-2deg);
+    }
+  }
+
+  .just-computer {
+    animation: computerFloat 5.3s ease-in-out infinite;
+  }
+
+  .move-elements {
+    transition: ry 0.3s;
+  }
+}
+
+.good-summer-sticker {
+  position: absolute;
+  left: -5rem;
+  margin-top: 2rem;
+  width: calc(5rem + 10vw);
+  animation: float1 3.7s ease-in-out infinite;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 3rem;
+    left: -2rem;
+    width: calc(6rem );
+  }
+
+}
+
+.happy-sticker {
+  position: absolute;
+  margin-bottom: 5rem;
+  right: -3rem;
+  width: calc(3rem + 5vw);
+  animation: float2 3.7s ease-in-out 0.5s infinite;
+
+  @media screen and (max-width: 700px) {
+    right: -1rem;
+    width: calc(3rem);
+  }
+}
