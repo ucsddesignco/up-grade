@@ -1,12 +1,12 @@
-import './App.scss';
-import Hero from './components/Hero';
-import WhatIsUpgrade from './components/WhatIsUpgrade';
-import Overview from './components/Overview';
-import CentralThemes from './components/CentralThemes';
-import WhyApply from './components/WhyApply';
-import FAQ from './components/FAQ';
-import { useRef } from 'react';
-import Navbar from './components/Navbar';
+import "./App.scss";
+import Hero from "./components/Hero";
+import WhatIsUpgrade from "./components/WhatIsUpgrade";
+import Overview from "./components/Overview";
+import CentralThemes from "./components/CentralThemes";
+import WhyApply from "./components/WhyApply";
+import FAQ from "./components/FAQ";
+import { useRef } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
   const heroRef = useRef();
@@ -30,17 +30,19 @@ function App() {
       <div>
         <Hero />
       </div>
-      <div ref={whatIsUpgradeRef}>
-        <WhatIsUpgrade />
-      </div>
-      <div ref={overviewRef}>
-        <Overview />
-      </div>
-      <div ref={themesRef}>
-        <CentralThemes />
-      </div>
-      <div>
-        <WhyApply />
+      <div style={{ maxWidth: "100%", overflowX: "clip" }}>
+        <div ref={whatIsUpgradeRef}>
+          <WhatIsUpgrade />
+        </div>
+        <div ref={overviewRef}>
+          <Overview />
+        </div>
+        <div ref={themesRef}>
+          <CentralThemes />
+        </div>
+        <div>
+          <WhyApply />
+        </div>
       </div>
       <div ref={FAQRef}>
         <FAQ />

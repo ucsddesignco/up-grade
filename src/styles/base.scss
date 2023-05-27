@@ -1,7 +1,8 @@
 @use "var";
 
 body {
-  overflow-x: hidden;
+  // max-width: 100% !important;
+  // overflow-x: clip !important;
   background-color: var.$background;
 }
 

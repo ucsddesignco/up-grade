@@ -160,7 +160,7 @@ const Overview = () => {
           style={{
             position: "absolute",
             right: "15%",
-            top: "30%",
+            top: "40%",
           }}
           width="clamp(16px, 5vw, 72px)"
           viewBox="0 0 87 87"

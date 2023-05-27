@@ -33,7 +33,7 @@ const WhyApply = () => {
           style={{
             position: "absolute",
             left: "-8%",
-            top: "42%",
+            top: "32%",
           }}
           width="clamp(80px, 20vw, 360px)"
           fill="none"
@@ -54,7 +54,7 @@ const WhyApply = () => {
           style={{
             position: "absolute",
             left: "30%",
-            top: "50%",
+            top: "40%",
           }}
           width="clamp(16px, 6vw, 64px)"
           viewBox="0 0 87 87"
@@ -73,7 +73,7 @@ const WhyApply = () => {
           style={{
             position: "absolute",
             left: "35%",
-            top: "60%",
+            top: "50%",
           }}
           width="clamp(15px, 5vw, 48px)"
           viewBox="0 0 87 87"
