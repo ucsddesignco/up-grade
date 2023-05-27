@@ -31,17 +31,19 @@ function App() {
       <div>
         <Hero />
       </div>
-      <div ref={whatIsUpgradeRef}>
-        <WhatIsUpgrade />
-      </div>
-      <div ref={overviewRef}>
-        <Overview />
-      </div>
-      <div ref={themesRef}>
-        <CentralThemes />
-      </div>
-      <div>
-        <WhyApply />
+      <div style={{ maxWidth: "100%", overflowX: "clip" }}>
+        <div ref={whatIsUpgradeRef}>
+          <WhatIsUpgrade />
+        </div>
+        <div ref={overviewRef}>
+          <Overview />
+        </div>
+        <div ref={themesRef}>
+          <CentralThemes />
+        </div>
+        <div>
+          <WhyApply />
+        </div>
       </div>
       <div ref={FAQRef}>
         <FAQ />

@@ -1,77 +1,91 @@
+@use "var";
 
-@use 'var';
+body {
+  // max-width: 100% !important;
+  // overflow-x: clip !important;
+  background-color: var.$background;
+}
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;    
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-h2, h3, h4, h5, p {
-    color: var.$text-color;
-    margin: 0;
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var.$text-color;
+  margin: 0;
 }
 
 h1 {
-    font-family: var.$heading-font;
-    font-size: min(3.8svw, 2.5rem);
-    line-height: 150%;
+  font-family: var.$heading-font;
+  font-size: min(3.8svw, 2.5rem);
+  line-height: 150%;
 
-    @media only screen and (max-width: var.$mobile) {
-        font-size: 1.5rem;
-    }
+  @media only screen and (max-width: var.$mobile) {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
-    font-family: var.$heading-font;
-    font-size: min(1.5svw, 1.5rem);
-    line-height: 150%;
+  font-family: var.$heading-font;
+  font-size: min(1.5svw, 1.5rem);
+  line-height: 150%;
 
-    @media only screen and (max-width: var.$mobile) {
-        font-size: 1rem;
-        line-height: 130%;
-    }
+  @media only screen and (max-width: var.$mobile) {
+    font-size: 1rem;
+    line-height: 130%;
+  }
 }
 
 h4 {
-    font-family: var.$subheading-font;
-    font-size: min(1.5svw, 1.2rem);
-    line-height: 150%;
+  font-family: var.$subheading-font;
+  font-size: min(1.5svw, 1.2rem);
+  line-height: 150%;
 
-    @media only screen and (max-width: var.$mobile) {
-        font-size: 1.125rem;
-    }
+  @media only screen and (max-width: var.$mobile) {
+    font-size: 1.125rem;
+  }
 }
 
 h5 {
-    font-family: var.$heading-font;
-    font-size: min(1.25svw, 1rem);
-    line-height: 130%;
+  font-family: var.$heading-font;
+  font-size: min(1.25svw, 1rem);
+  line-height: 130%;
 
-    @media only screen and (max-width: var.$mobile) {
-        font-size: 0.875rem;
-    }
+  @media only screen and (max-width: var.$mobile) {
+    font-size: 0.875rem;
+  }
 }
 
 p {
-    font-family: var.$p-font;
-    font-size: min(1.1svw, 0.875rem);
-    line-height: 148%;
+  font-family: var.$p-font;
+  font-size: min(1.1svw, 0.875rem);
+  line-height: 148%;
 
-    @media only screen and (max-width: var.$mobile) {
-        font-size: 0.875rem;
-        line-height: 130%;
-    }
+  @media only screen and (max-width: var.$mobile) {
+    font-size: 0.875rem;
+    line-height: 130%;
+  }
 }
 
 a {
-    font-family: var.$heading-font;
+  font-family: var.$heading-font;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
