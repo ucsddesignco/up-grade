@@ -18,7 +18,7 @@ function App() {
 
   //https://stackoverflow.com/questions/47011055/smooth-vertical-scrolling-on-mouse-wheel-in-vanilla-javascript
   function init(){
-    new SmoothScroll(document,150,19)
+    new SmoothScroll(document,150,15)
   }
   
   function SmoothScroll(target, speed, smooth) {
