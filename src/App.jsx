@@ -7,6 +7,7 @@ import WhyApply from './components/WhyApply';
 import FAQ from './components/FAQ';
 import { useRef } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const heroRef = useRef();
@@ -44,6 +45,9 @@ function App() {
       </div>
       <div ref={FAQRef}>
         <FAQ />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );

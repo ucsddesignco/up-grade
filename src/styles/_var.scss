@@ -15,11 +15,13 @@ $primary-color: #19B000;
 $inside-background-color: #F3F3F3;
 $outside-background-color: #EBEBEB;
 $background-color: radial-gradient($inside-background-color, $outside-background-color);
+$background: #F2F4F1;
 
 // Fonts //
 $heading-font: 'MBA Slice Mono', sans-serif;
-$subheading-font: "Neue Haas Display Light", sans-serif;
-$p-font: "Neue Haas Display Medium", sans-serif;
+$subheading-font: "Neue Haas Display Medium", sans-serif;
+$p-font: "Neue Haas Display Light", sans-serif;
+$link-font: "NB International Mono", sans-serif;
 
 // Importing Fonts //
 @font-face {
@@ -35,4 +37,30 @@ $p-font: "Neue Haas Display Medium", sans-serif;
 @font-face {
     font-family: "Neue Haas Display Medium";
     src: url("assets/fonts/NeueHaasDisplayMedium.ttf"); 
+}
+
+@font-face {
+    font-family: "NB International Mono";
+    src: url("assets/fonts/NB-Internatioinal-Mono.ttf")
+}
+
+// Animations
+
+@keyframes float1 {
+    50% {
+        transform: translateY(-8px) rotate(-4deg);
+    }
+
+}
+@keyframes float2 {
+    50% {
+        transform: translateY(-6px) rotate(3deg);
+    }
+
+}
+
+@keyframes float3 {
+    50% {
+        transform: translateY(-8px) rotate(-2deg);
+    }
 }
