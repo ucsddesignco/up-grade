@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './styles.scss';
 
 const Navbar = ({ refs }) => {
-  console.log(refs);
   const [open, setOpen] = useState();
 
   return (
@@ -80,7 +79,7 @@ const Navbar = ({ refs }) => {
           </li>
           <li>
             <div className="apply-container">
-              <button className="apply">Apply Here</button>
+              <button className="apply">Apply &nbsp;Here</button>
               <svg
                 className="star"
                 width="46"
