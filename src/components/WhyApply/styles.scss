@@ -5,7 +5,7 @@
   h3 {
     text-align: center;
   }
-  margin-top: 256px;
+  margin-top: clamp(92px, 10vw, 256px);
 
   @media screen and (max-width: 600px) {
     margin-top: 92px;

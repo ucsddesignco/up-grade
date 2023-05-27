@@ -45,3 +45,35 @@
     margin-top: 30px;
   }
 }
+
+.animate1 {
+  animation: float1 3.7s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.animate2 {
+  animation: float2 3.7s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.animate3 {
+  animation: float1 3.7s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes float1 {
+  50% {
+    transform: translateY(-8px) rotate(-4deg);
+  }
+}
+@keyframes float2 {
+  50% {
+    transform: translateY(-6px) rotate(3deg);
+  }
+}
+
+@keyframes float3 {
+  50% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+}
