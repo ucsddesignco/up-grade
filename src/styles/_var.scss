@@ -22,6 +22,7 @@ $background: #f2f4f1;
 
 // Fonts //
 $heading-font: "MBA Slice Mono", sans-serif;
+
 $subheading-font: "Neue Haas Display Medium", sans-serif;
 $p-font: "Neue Haas Display Light", sans-serif;
 $link-font: "NB International Mono", sans-serif;
@@ -47,6 +48,7 @@ $link-font: "NB International Mono", sans-serif;
   src: url("assets/fonts/NB-Internatioinal-Mono.ttf");
 }
 
+
 // Animations
 
 @keyframes float1 {
@@ -65,3 +67,4 @@ $link-font: "NB International Mono", sans-serif;
     transform: translateY(-8px) rotate(-2deg);
   }
 }
+

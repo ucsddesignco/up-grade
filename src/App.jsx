@@ -1,12 +1,13 @@
-import "./App.scss";
-import Hero from "./components/Hero";
-import WhatIsUpgrade from "./components/WhatIsUpgrade";
-import Overview from "./components/Overview";
-import CentralThemes from "./components/CentralThemes";
-import WhyApply from "./components/WhyApply";
-import FAQ from "./components/FAQ";
-import { useRef } from "react";
-import Navbar from "./components/Navbar";
+import './App.scss';
+import Hero from './components/Hero';
+import WhatIsUpgrade from './components/WhatIsUpgrade';
+import Overview from './components/Overview';
+import CentralThemes from './components/CentralThemes';
+import WhyApply from './components/WhyApply';
+import FAQ from './components/FAQ';
+import { useRef } from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const heroRef = useRef();
@@ -46,6 +47,9 @@ function App() {
       </div>
       <div ref={FAQRef}>
         <FAQ />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );
