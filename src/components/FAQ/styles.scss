@@ -22,6 +22,7 @@
       align-items: left;
       justify-content: flex-end;
       width: 45vw;
+      position: relative;
       
 
       > h1 {
@@ -35,9 +36,9 @@
       > .desktop-squiggle {
         display: block;
         position: absolute;
-        width: 400px;
         height: auto;
-        transform: translate(-78px, 390px);
+        left: -60%;
+        top: 90%;
         z-index: 1;
       }
       > .mobile-squiggle {
