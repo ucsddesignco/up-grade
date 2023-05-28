@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import './styles.scss';
 
-const Navbar = ({ refs }) => {
+const Navbar = ({ refs, setHoveringNav }) => {
   const [open, setOpen] = useState();
 
   return (
     <div className="navbar-container">
       <div className="left">
-        <a className="logo" href="/">
+        <a onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)} className="logo" href="/">
           UP-GRADE
         </a>
       </div>
       <div className="right">
         <button
+          onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
           onClick={() => setOpen(!open)}
           aria-expanded={open}
           className="mobile-button"
@@ -49,6 +50,7 @@ const Navbar = ({ refs }) => {
         <ul>
           <li>
             <button
+              onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
               onClick={() =>
                 refs['overview'].current.scrollIntoView({
                   behavior: 'smooth',
@@ -61,6 +63,7 @@ const Navbar = ({ refs }) => {
 
           <li>
             <button
+              onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
               onClick={() =>
                 refs['themes'].current.scrollIntoView({ behavior: 'smooth' })
               }
@@ -70,6 +73,7 @@ const Navbar = ({ refs }) => {
           </li>
           <li>
             <button
+              onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
               onClick={() =>
                 refs['FAQ'].current.scrollIntoView({ behavior: 'smooth' })
               }
@@ -77,7 +81,7 @@ const Navbar = ({ refs }) => {
               FAQ
             </button>
           </li>
-          <li>
+          <li onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}>
             <div className="apply-container">
               <button className="apply">Apply &nbsp;Here</button>
               <svg

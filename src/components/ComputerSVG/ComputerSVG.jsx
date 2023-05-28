@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './styles.scss'
 
-export default function ComputerSVG () {
+export default function ComputerSVG ({hoveringNav}) {
 
   const leftEyeRef = useRef();
   const rightEyeRef = useRef();
@@ -15,7 +15,7 @@ export default function ComputerSVG () {
         const eyePosY = moveElement.current.getBoundingClientRect().y;
         const diffX = e.clientX - eyePosX;
         const diffY = e.clientY - eyePosY;
-        moveElement.current.style.transform = `translate(${((diffX/document.body.clientWidth) * 35)}px, ${((diffY/document.body.clientHeight) * 120)}px)`;
+        moveElement.current.style.transform = `translate(${((diffX/document.body.clientWidth) * 35)}px, ${((diffY/document.body.clientHeight) * 250)}px)`;
       })
     })
 
@@ -30,6 +30,14 @@ export default function ComputerSVG () {
     }, [(Math.random() * 5000) + 2000])
 
   }, [])
+
+  useEffect(() => {
+    if (hoveringNav) {
+      smileRef.current.setAttribute('r', 10);
+    } else {
+      smileRef.current.setAttribute('r', 4);
+    }
+  }, [hoveringNav])
     
 
     return <div className='upgrade-computer-container'>

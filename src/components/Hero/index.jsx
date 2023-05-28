@@ -3,9 +3,10 @@ import './styles.scss';
 import DesignCo from '../../../src/assets/design-co.svg'
 import { useEffect, useState } from 'react';
 
-const Hero = () => {
+const Hero = ({hoveringNav}) => {
 
   const [responsiveWidth, setResponsiveWidth] = useState("max(calc(38rem - 6vw), 45vw)")
+
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -30,7 +31,7 @@ const Hero = () => {
           <text textLength={responsiveWidth} x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" className="stroke-behind">UP-GRADE</text>
         </svg>
       </div>
-      <ComputerSVG/>
+      <ComputerSVG hoveringNav={hoveringNav}/>
 
      
     </div>
