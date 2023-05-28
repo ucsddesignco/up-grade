@@ -7,7 +7,7 @@
 .subsection {
   margin: 0 auto;
   max-width: min(1300px, 90%);
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
   position: relative;
 
   @media only screen and (max-width: var.$mobile) {
@@ -23,6 +23,7 @@
     line-height: 140%;
     color: var.$text-color;
     background-color: var.$background-color;
+    text-align: justify;
   }
 
   h2 {
@@ -35,8 +36,7 @@
   h3 {
     font-family: var.$subheading-font;
     color: var.$primary-color;
-    font-size: clamp(1rem, 3vw, 2.25rem);
-    text-transform: uppercase;
+    font-size: clamp(1rem, 2vw, 2.25rem);
   }
 }
 
