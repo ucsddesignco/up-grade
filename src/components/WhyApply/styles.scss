@@ -10,12 +10,19 @@
   @media screen and (max-width: 600px) {
     margin-top: 92px;
   }
+
+  .cloud-svg {
+    position: relative;
+    bottom: calc(-15vw + 5rem);
+    right: calc(-1 * (10vw + 1rem));
+  }
 }
 
 p.why-apply--subtitle {
   font-family: var.$subheading-font;
   color: var.$primary-color;
-  font-size: clamp(1rem, 3vw, 2.25rem);
+  font-size: clamp(1rem, 1.75vw, 2.25rem);
+  // font-size: 1.75rem;
   & + p:not(:last-child) {
     margin-bottom: 40px;
   }

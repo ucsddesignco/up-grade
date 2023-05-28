@@ -8,8 +8,6 @@ import Star from "../../assets/faq/star.png";
 import Window from "../../assets/faq/window.png";
 import Squiggle from "../../assets/faq/squiggle.svg"
 
-import Plus from "../../assets/faq/plus.svg";
-import Minus from "../../assets/faq/minus.svg";
 
 
 

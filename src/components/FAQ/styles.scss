@@ -6,9 +6,8 @@
   height: 100%;
 
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: min(1300px, 90%);
+  margin: 0 auto;
   
   > .section-one {
     display: flex;
@@ -28,7 +27,7 @@
       > h1 {
         font-family: var.$heading-font;
         color: var.$primary-color;
-        font-size: clamp(5rem, 40vw, 8rem);
+        font-size: clamp(2.5rem, 8vw, 8rem);
         font-weight: lighter;
         z-index: 2;
         stroke: var.$background-color 4px;
@@ -98,8 +97,8 @@
   }
 
   > .section-two-accordion {
-    width: 90vw;
     z-index: 3;
+    position: relative;
 
     .accordion {
       background-color: var.$background-color;
@@ -109,7 +108,6 @@
       .accordion-item {
         border: 3px solid var.$primary-color;
         display: block;
-        width: 90vw;
 
         .accordion-title {
           display: flex;
@@ -210,7 +208,6 @@
           padding: 0 4rem 0rem 4rem;
           max-height: 0;
           opacity: 0;
-          overflow: hidden;
           transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, padding-bottom 0.4s ease-in-out;
           text-align: justify;
         }

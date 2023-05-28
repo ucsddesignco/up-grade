@@ -5,13 +5,13 @@
 }
 
 .subsection {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
-  margin-bottom: 80px;
+  max-width: min(1300px, 90%);
+  margin-bottom: 10rem;
   position: relative;
 
   @media only screen and (max-width: var.$mobile) {
+    padding: 0 40px;
     gap: calc(var(--space_mobile) * 1px);
     margin-bottom: 60px;
   }
@@ -29,6 +29,7 @@
     font-family: var.$heading-font;
     color: var.$primary-color;
     font-size: clamp(2.5rem, 8vw, 8rem);
+    font-weight: 300;
   }
 
   h3 {

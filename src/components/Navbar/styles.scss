@@ -95,9 +95,8 @@
     button {
       margin-left: 3rem;
       font-family: var.$subheading-font;
-      font-weight: 600;
       font-size: min(1.5vw, 1.25rem);
-
+      font-weight: 100 !important;
       color: var.$primary-color;
       text-transform: uppercase;
 
