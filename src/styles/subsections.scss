@@ -27,8 +27,13 @@
 
   h2 {
     font-family: var.$heading-font;
+    letter-spacing: 0.07em;
     color: var.$primary-color;
     font-size: clamp(2.5rem, 8vw, 8rem);
+    text-shadow: -4px -4px 0 var.$background, 0 -4px 0 var.$background,
+      4px -4px 0 var.$background, 4px 0 0 var.$background,
+      4px 4px 0 var.$background, 0 4px 0 var.$background,
+      -4px 4px 0 var.$background, -4px 0 0 var.$background;
   }
 
   h3 {
@@ -36,6 +41,7 @@
     color: var.$primary-color;
     font-size: clamp(1rem, 3vw, 2.25rem);
     text-transform: uppercase;
+    line-height: 100%;
   }
 }
 
@@ -77,4 +83,3 @@
     transform: translateY(-8px) rotate(-2deg);
   }
 }
-

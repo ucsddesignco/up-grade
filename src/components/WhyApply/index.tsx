@@ -100,31 +100,38 @@ const WhyApply = () => {
         space={[80, 16]}
       >
         <Columns.Column>
-          <p className="why-apply--subtitle">Education</p>
-          <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis.{" "}
+          <p className="why-apply--subtitle">
+            UP-Grade your resume + portfolio
           </p>
-          <p className="why-apply--subtitle">Education</p>
           <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis.{" "}
+            Gain real-world experience through a fully developed project and
+            stand out from other student designers with a personal story about
+            your involvement in the project process!
+          </p>
+          <p className="why-apply--subtitle">
+            Network with peers and industry professionals
+          </p>
+          <p>
+            Collaborate with leaders in local nonprofit organizations, connect
+            with tech industry professionals, and get to know project mentors!
           </p>
         </Columns.Column>
         <Columns.Column>
-          <p className="why-apply--subtitle">Education</p>
-          <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis.{" "}
+          <p className="why-apply--subtitle">
+            Put classroom knowledge to use in a real-world setting
           </p>
-          <p className="why-apply--subtitle">Education</p>
           <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis.{" "}
+            Bring your knowledge of technical and soft skills (and all things
+            design process related) to active and practical use, further
+            refining your skills along the way!
+          </p>
+          <p className="why-apply--subtitle">
+            Create meaningful solutions for social impact nonprofits
+          </p>
+          <p>
+            Bring your visions to reality, design with intention, problem-solve
+            and overcome obstacles, and work to create lasting change for a
+            larger community!
           </p>
         </Columns.Column>
       </Columns>
@@ -138,17 +145,24 @@ const WhyApply = () => {
         >
           <Columns.Column>
             <p>
-              Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id
-              laoreet faucibus placerat volutpat aliquam. Orci ut ultricies ac
-              mi. Est, amet, viverra interdum eu mattis lobortis felis.
+              “I was able to learn a lot through this project and was challenged
+              to broaden my perspective and opinions. I realized how important
+              it is to get accurate data and not to jump into my own
+              assumptions. Getting help from mentors and professionals with real
+              outside of class experience was also very insightful and
+              beneficial in designing this project.”
             </p>
+            <p className="why-apply--quotes-author">- Past Build Upper</p>
           </Columns.Column>
           <Columns.Column>
             <p>
-              Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id
-              laoreet faucibus placerat volutpat aliquam. Orci ut ultricies ac
-              mi. Est, amet, viverra interdum eu mattis lobortis felis.
+              “Learning about marketing and social media branding was a plus for
+              sure, I feel like I needed an intro to many of the topics covered
+              and there was no better way to do so than taking a part of such a
+              versatile and dedicated team that ranged in skills, talents, and
+              industry knowledge.”
             </p>
+            <p className="why-apply--quotes-author">- Past Power Upper</p>
           </Columns.Column>
         </Columns>
       </div>
