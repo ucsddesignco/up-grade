@@ -31,7 +31,7 @@
         font-size: clamp(2.5rem, 8vw, 8rem);
         font-weight: lighter;
         z-index: 2;
-        stroke: var.$background 4px;
+        stroke: var.$background-color 4px;
         text-shadow: -4px -4px 0 var.$background-color, 0 -4px 0 var.$background-color,
           4px -4px 0 var.$background-color, 4px 0 0 var.$background-color,
           4px 4px 0 var.$background-color, 0 4px 0 var.$background-color,
