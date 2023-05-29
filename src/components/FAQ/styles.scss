@@ -6,7 +6,7 @@
   height: 100%;
   max-width: min(1300px, 90%);
   margin: 0 auto;
-  
+
   > .section-one {
     display: flex;
     flex-direction: row;
@@ -21,7 +21,6 @@
       justify-content: flex-end;
       width: 45vw;
       position: relative;
-      
 
       > h1 {
         font-family: var.$heading-font;
@@ -53,7 +52,6 @@
       align-items: center;
       position: relative;
 
-
       > .shape-one-cont {
         // width: 54px;
         height: auto;
@@ -67,28 +65,25 @@
         }
       }
 
-      
-
       > .shape-two-cont {
         z-index: 2;
 
-        >.shape-two {
+        > .shape-two {
           width: clamp(50px, 15vw, 160px);
           left: 20%;
           position: absolute;
-          animation-delay: 1s;
           animation: float2 5s ease-in-out infinite;
           animation-delay: 0.7s;
         }
-
       }
 
       > .shape-three {
         position: absolute;
         width: clamp(300px, 30vw, 500px);
-        // transform: translate(calc(23vw - 240px), 150px);
         right: 0;
         margin-top: 250px;
+        animation: float1 5s ease-in-out infinite;
+        animation-delay: 0.4s;
 
         z-index: 1;
       }
@@ -103,10 +98,7 @@
           animation-delay: 0.3s;
         }
       }
-
-
     }
-
   }
 
   > .section-two-accordion {
@@ -116,7 +108,7 @@
     .accordion {
       background-color: var.$background-color;
       font-family: var.$p-font;
-      
+
       .accordion-item {
         border: 3px solid var.$primary-color;
         display: block;
@@ -137,7 +129,6 @@
 
           .title {
             font-size: clamp(1.5rem, 3vw, 2rem);
-
           }
           .symbol {
             font-size: 4rem;
@@ -150,29 +141,22 @@
             justify-content: center;
             transition: transform 0.4s ease-in-out;
 
-            
-
             @keyframes spinInVert {
               100% {
                 transform: rotate(90deg);
               }
-              
             }
             @keyframes spinInHori {
-
-  
               100% {
                 transform: rotate(90deg);
                 opacity: 0;
               }
-              
             }
             @keyframes spinOutVert {
-              
               0% {
                 opacity: 0;
               }
-  
+
               100% {
                 transform: rotate(-90deg);
                 opacity: 1;
@@ -183,7 +167,6 @@
                 transform: rotate(-90deg);
                 opacity: 1;
               }
-              
             }
 
             .symbolvert {
@@ -212,10 +195,7 @@
               animation: spinInHori 0.4s ease-in-out;
               animation-fill-mode: forwards;
             }
-
           }
-
-          
         }
 
         .accordion-content {
@@ -224,7 +204,8 @@
           padding: 0 4rem 0rem 4rem;
           max-height: 0;
           opacity: 0;
-          transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, padding-bottom 0.4s ease-in-out;
+          transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out,
+            padding-bottom 0.4s ease-in-out;
           text-align: justify;
         }
 
@@ -235,15 +216,11 @@
           font-family: var.$p-font;
           font-size: 1.5rem;
         }
-        
-      
       }
-      
-      
-      .accordion-item:nth-child(n+2) {
+
+      .accordion-item:nth-child(n + 2) {
         margin-top: -3px;
-    }
-      
+      }
     }
   }
 }
@@ -264,7 +241,7 @@
           position: absolute;
           display: block;
           width: 100px;
-          
+
           transform: translate(-36px, calc(20vw + 10px));
           z-index: 1;
         }
@@ -281,16 +258,13 @@
 
         .shape-three {
           width: 200px;
-
         }
         .shape-four-cont {
           .shape-four {
             margin-top: 10px;
           }
         }
-
       }
-      
     }
     > .section-two-accordion {
       position: relative;
@@ -309,32 +283,28 @@
               .symbolvert {
                 height: 20px;
                 width: 1px;
-                border: 1px solid #19B000;
-                
+                border: 1px solid #19b000;
               }
-  
+
               .symbolhori {
                 height: 1px;
                 width: 20px;
-                border: 1px solid #19B000;
+                border: 1px solid #19b000;
               }
-
             }
           }
           > .accordion-content {
-            font-size: 0.8rem;  
+            font-size: 0.8rem;
             padding: 0 10vw 0 10vw;
           }
           .fade-in {
             padding: 0 10vw 1.5rem 10vw;
           }
         }
-        .accordion-item:nth-child(n+2) {
+        .accordion-item:nth-child(n + 2) {
           margin-top: -2px;
+        }
       }
-      }
-      
     }
   }
-  
 }
