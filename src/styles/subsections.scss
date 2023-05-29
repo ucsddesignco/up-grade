@@ -16,6 +16,12 @@
     margin-bottom: 60px;
   }
 
+  a {
+    font: inherit;
+    color: var.$primary-color;
+    font-family: var.$subheading-font;
+  }
+
   p,
   ul > li {
     font-family: var.$p-font;

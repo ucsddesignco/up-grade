@@ -30,9 +30,9 @@ p.why-apply--subtitle {
   h3 {
     font-style: normal;
   }
-  p {
-    font-style: italic;
-  }
+
+  font-style: italic;
+
   @media screen and (max-width: 600px) {
     margin-top: 60px;
   }
@@ -40,7 +40,7 @@ p.why-apply--subtitle {
 
 .why-apply--quotes-author {
   font-style: normal;
-  font-weight: bold;
+  font-family: var.$subheading-font !important;
   opacity: 0.65;
   margin-top: 0.5em;
 }
