@@ -15,18 +15,18 @@
   .logo {
     display: block;
     font-family: var.$heading-font;
-    font-size: 3rem;
+    font-size: min(3.5vw, 3rem);
     color: var.$primary-color;
     text-decoration: none;
     transition: all 0.3s;
     letter-spacing: 3px;
 
     @media screen and (max-width: 900px) {
-      font-size: min(4vw, 3rem);
+      font-size: min(3.5vw, 3rem);
     }
 
-    @media screen and (max-width: 850px) {
-      font-size: min(6vw, 3rem);
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
     }
 
     &:hover {
@@ -44,14 +44,15 @@
       align-items: center;
       z-index: 1;
 
-      @media screen and (max-width: 850px) {
+
+      @media screen and (max-width: 870px) {
         margin-inline: auto;
         flex-direction: column;
         position: absolute;
         align-items: flex-start;
         padding-left: 5rem;
         inset: 0;
-        margin-top: calc(2 * 30px + 30px);
+        margin-top: calc(10vw + 2rem);
         padding-top: 5rem;
 
         li {
@@ -66,7 +67,7 @@
     .mobile-button {
       display: none;
 
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 870px) {
         display: block;
 
         .close-icon {
@@ -93,25 +94,22 @@
     }
 
     button {
-      margin-left: 3rem;
+      padding: 2rem;
       font-family: var.$subheading-font;
       font-size: min(1.5vw, 1.25rem);
       font-weight: 100 !important;
       color: var.$primary-color;
       text-transform: uppercase;
 
-      @media screen and (max-width: 900px) {
-        font-size: min(1.75vw);
-      }
 
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 870px) {
+        padding: 0;
         margin-left: 0;
         font-size: min(1.5vw, 1.25rem);
       }
 
       &:not(.apply) {
         &:hover {
-          cursor: pointer;
           opacity: 0.4;
           transform: scale(0.9);
         }
@@ -123,8 +121,6 @@
       position: relative;
 
       &:hover {
-        cursor: pointer;
-
         .star {
           transform: rotate(-60deg);
         }
@@ -158,4 +154,5 @@
     all: unset;
     transition: all 0.3s;
   }
+
 }
