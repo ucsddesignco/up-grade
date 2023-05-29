@@ -18,9 +18,9 @@ function SmoothScroll(target, speed, smooth) {
               : target // safari is the new IE
   
   target.addEventListener('mousewheel', scrolled, { passive: false })
-  target.addEventListener('DOMMouseScroll', scrolled, { passive: false })
 
   function scrolled(e) {
+    if (e.ctrlKey) return;
     e.preventDefault(); // disable default scrolling
 
     var delta = normalizeWheelDelta(e)
