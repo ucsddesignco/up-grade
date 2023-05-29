@@ -2,7 +2,7 @@
 
 body {
   background-color: var.$background-color;
-  cursor: url('../../../src/assets/custom-cursor.png'), auto;
+  cursor: url('../../src/assets/cursor/custom-cursor.png'), auto;
 
 }
 
@@ -96,5 +96,5 @@ a {
 
 
 button:hover, a:hover {
-  cursor: url('../../../src/assets/custom-hover.png'), auto;
+  cursor: url('../../src/assets/cursor/custom-hover.png'), auto;
 }
