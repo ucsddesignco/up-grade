@@ -135,7 +135,7 @@ const CentralThemes = () => {
         </svg>
 
         <div className="central-themes--grid-item">
-          <h3>Animal Resure & Adoption</h3>
+          <h3>Animal Rescue & Adoption</h3>
           <p>
             Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
             faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
