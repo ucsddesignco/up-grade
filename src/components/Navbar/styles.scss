@@ -50,7 +50,7 @@
         flex-direction: column;
         position: absolute;
         align-items: flex-start;
-        padding-left: 5rem;
+        padding-left: 15vw;
         inset: 0;
         margin-top: calc(10vw + 2rem);
         padding-top: 5rem;
@@ -58,7 +58,7 @@
         li {
           margin-bottom: 4rem;
           button {
-            font-size: min(5vw, 4rem);
+            font-size: clamp(1.5rem, 4vw, 2rem);
           }
         }
       }
