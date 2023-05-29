@@ -32,10 +32,10 @@
         font-weight: lighter;
         z-index: 2;
         stroke: var.$background 4px;
-        text-shadow: -4px -4px 0 var.$background, 0 -4px 0 var.$background,
-          4px -4px 0 var.$background, 4px 0 0 var.$background,
-          4px 4px 0 var.$background, 0 4px 0 var.$background,
-          -4px 4px 0 var.$background, -4px 0 0 var.$background; // leann added to add a stroke w/ background color
+        text-shadow: -4px -4px 0 var.$background-color, 0 -4px 0 var.$background-color,
+          4px -4px 0 var.$background-color, 4px 0 0 var.$background-color,
+          4px 4px 0 var.$background-color, 0 4px 0 var.$background-color,
+          -4px 4px 0 var.$background-color, -4px 0 0 var.$background-color; // leann added to add a stroke w/ background color
       }
       > .desktop-squiggle {
         display: block;
