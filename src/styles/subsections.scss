@@ -37,10 +37,10 @@
     letter-spacing: 0.07em;
     color: var.$primary-color;
     font-size: clamp(2.5rem, 8vw, 8rem);
-    text-shadow: -4px -4px 0 var.$background, 0 -4px 0 var.$background,
-      4px -4px 0 var.$background, 4px 0 0 var.$background,
-      4px 4px 0 var.$background, 0 4px 0 var.$background,
-      -4px 4px 0 var.$background, -4px 0 0 var.$background;
+    text-shadow: -4px -4px 0 var.$background-color, 0 -4px 0 var.$background-color,
+      4px -4px 0 var.$background-color, 4px 0 0 var.$background-color,
+      4px 4px 0 var.$background-color, 0 4px 0 var.$background-color,
+      -4px 4px 0 var.$background-color, -4px 0 0 var.$background-color;
     font-weight: 300;
   }
 
