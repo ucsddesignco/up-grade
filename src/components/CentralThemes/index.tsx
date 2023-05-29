@@ -44,6 +44,7 @@ const CentralThemes = () => {
       >
           <svg
           style={{marginInline: 'auto'}}
+          className="animate1"
           width="6rem"
           viewBox="0 0 43 47"
           fill="none"
@@ -92,6 +93,7 @@ const CentralThemes = () => {
 
         <svg
         style={{marginInline: 'auto'}}
+          className="animate2"
           width="8rem"
           viewBox="0 0 146 114"
           fill="none"
@@ -144,6 +146,7 @@ const CentralThemes = () => {
         </div>
         <svg
           style={{marginInline: 'auto'}}
+          className="animate3"
           width="6rem"
           viewBox="0 0 111 111"
           fill="none"

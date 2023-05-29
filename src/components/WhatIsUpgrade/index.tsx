@@ -50,13 +50,13 @@ const WhatIsUpgrade = () => {
           viewBox="0 0 280 281"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
-          <circle cx="139.877" cy="139.878" r="136.875" transform="rotate(0.625778 139.877 139.878)" fill="#F2F4F1" stroke="#1EC6DE" stroke-width="3"/>
-          <circle cx="139.878" cy="139.878" r="63.6501" transform="rotate(0.625778 139.878 139.878)" fill="#F2F4F1" stroke="#1EC6DE" stroke-width="3"/>
-          <circle cx="139.881" cy="139.878" r="57.3049" transform="rotate(0.625778 139.881 139.878)" fill="#F2F4F1" stroke="#1EC6DE" stroke-width="3"/>
-          <circle cx="139.88" cy="139.878" r="27.4722" transform="rotate(0.625778 139.88 139.878)" fill="#F2F4F1" stroke="#1EC6DE" stroke-width="3"/>
-          <path d="M184.378 10.9443C181.736 24.6748 176.117 52.8219 174.78 55.5679C182.733 58.3693 194.572 61.9737 205.647 78.309C207.649 78.309 234.569 63.1483 247.779 55.5679" stroke="#1EC6DE" stroke-width="3"/>
-          <path d="M164.671 80.3799C165.015 79.9187 168.08 72.7912 169.569 69.2852C176.049 69.2852 189.651 77.1353 196.8 87.7279L184.985 94.6439" stroke="#1EC6DE" stroke-width="3"/>
-          <path d="M32.96 225.088C34.2127 223.834 69.2137 191.549 86.5576 175.563M115.081 197.191L92.1998 267.403" stroke="#1EC6DE" stroke-width="3"/>
+          <circle cx="139.877" cy="139.878" r="136.875" transform="rotate(0.625778 139.877 139.878)" fill="#F2F4F1" stroke="#1EC6DE" strokeWidth="3"/>
+          <circle cx="139.878" cy="139.878" r="63.6501" transform="rotate(0.625778 139.878 139.878)" fill="#F2F4F1" stroke="#1EC6DE" strokeWidth="3"/>
+          <circle cx="139.881" cy="139.878" r="57.3049" transform="rotate(0.625778 139.881 139.878)" fill="#F2F4F1" stroke="#1EC6DE" strokeWidth="3"/>
+          <circle cx="139.88" cy="139.878" r="27.4722" transform="rotate(0.625778 139.88 139.878)" fill="#F2F4F1" stroke="#1EC6DE" strokeWidth="3"/>
+          <path d="M184.378 10.9443C181.736 24.6748 176.117 52.8219 174.78 55.5679C182.733 58.3693 194.572 61.9737 205.647 78.309C207.649 78.309 234.569 63.1483 247.779 55.5679" stroke="#1EC6DE" strokeWidth="3"/>
+          <path d="M164.671 80.3799C165.015 79.9187 168.08 72.7912 169.569 69.2852C176.049 69.2852 189.651 77.1353 196.8 87.7279L184.985 94.6439" stroke="#1EC6DE" strokeWidth="3"/>
+          <path d="M32.96 225.088C34.2127 223.834 69.2137 191.549 86.5576 175.563M115.081 197.191L92.1998 267.403" stroke="#1EC6DE" strokeWidth="3"/>
           </svg>
         <svg
           className="star-svg animate3"

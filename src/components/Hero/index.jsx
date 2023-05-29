@@ -10,7 +10,6 @@ const Hero = ({hoveringNav}) => {
 
   useEffect(() => {
     window.addEventListener("resize", () => {
-      console.log('resizing')
       if (window.innerWidth < 701) {
         setResponsiveWidth("min(calc(28rem - 5vw), 70vw)")
       } else {
