@@ -16,6 +16,12 @@
     margin-bottom: 60px;
   }
 
+  a {
+    font: inherit;
+    color: var.$primary-color;
+    font-family: var.$subheading-font;
+  }
+
   p,
   ul > li {
     font-family: var.$p-font;
@@ -28,14 +34,21 @@
 
   h2 {
     font-family: var.$heading-font;
+    letter-spacing: 0.07em;
     color: var.$primary-color;
     font-size: clamp(2.5rem, 8vw, 8rem);
+    text-shadow: -4px -4px 0 var.$background-color, 0 -4px 0 var.$background-color,
+      4px -4px 0 var.$background-color, 4px 0 0 var.$background-color,
+      4px 4px 0 var.$background-color, 0 4px 0 var.$background-color,
+      -4px 4px 0 var.$background-color, -4px 0 0 var.$background-color;
     font-weight: 300;
   }
 
   h3 {
     font-family: var.$subheading-font;
     color: var.$primary-color;
+    text-transform: uppercase;
+    line-height: 100%;
     font-size: clamp(1rem, 2vw, 2.25rem);
   }
 }
@@ -78,4 +91,3 @@
     transform: translateY(-8px) rotate(-2deg);
   }
 }
-

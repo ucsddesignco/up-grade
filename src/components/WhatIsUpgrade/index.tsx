@@ -86,20 +86,17 @@ const WhatIsUpgrade = () => {
       >
         <Columns.Column>
           <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis. At cras amet, in
-            orci at feugiat fermentum tellus. In massa mi massa volutpat
-            tincidunt suscipit.
+            We've <a href="https://powerup.ucsddesign.co">Powered Up</a>...
+            we've <a href="https://buildup.ucsddesign.co">Built Up</a>... this
+            summer, get ready to UP-Grade your skill set with our annual summer
+            design program.
           </p>
         </Columns.Column>
         <Columns.Column>
           <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis. At cras amet, in
-            orci at feugiat fermentum tellus. In massa mi massa volutpat
-            tincidunt suscipit.
+            UP-Grade is a 10-week online summer program where students will get
+            the opportunity to work closely alongside a local, nonprofit
+            organization to amplify and boost their exposure.
           </p>
         </Columns.Column>
       </Columns>

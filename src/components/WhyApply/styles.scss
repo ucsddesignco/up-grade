@@ -21,8 +21,11 @@
 p.why-apply--subtitle {
   font-family: var.$subheading-font;
   color: var.$primary-color;
-  font-size: clamp(1rem, 1.75vw, 2.25rem);
-  // font-size: 1.75rem;
+  font-size: clamp(1rem, 3vw, 2.25rem);
+  line-height: 100%;
+  & + p {
+    margin-top: 0.75em;
+  }
   & + p:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -30,7 +33,20 @@ p.why-apply--subtitle {
 
 .why-apply--quotes {
   margin-top: 120px;
+  h3 {
+    font-style: normal;
+  }
+
+  font-style: italic;
+
   @media screen and (max-width: 600px) {
     margin-top: 60px;
   }
+}
+
+.why-apply--quotes-author {
+  font-style: normal;
+  font-family: var.$subheading-font !important;
+  opacity: 0.65;
+  margin-top: 0.5em;
 }

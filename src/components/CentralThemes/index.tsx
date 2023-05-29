@@ -85,9 +85,13 @@ const CentralThemes = () => {
         <div className="central-themes--grid-item">
           <h3>Education</h3>
           <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis.
+            Nonprofit organizations in San Diego thrive on their commitment to
+            accessible education. From mentoring/tutoring services to outdoor
+            recreational courses, these groups ensure that learning
+            opportunities are made available to all regardless of age,
+            socio-economic status, or other barriers! They work hard to provide
+            opportunities for local youth to develop the skills and knowledge
+            they need to succeed.
           </p>
         </div>
 
@@ -137,11 +141,14 @@ const CentralThemes = () => {
         </svg>
 
         <div className="central-themes--grid-item">
-          <h3>Animal Rescue & Adoption</h3>
+          <h3>Animal Services</h3>
+
           <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis.
+            Our local animal rescue and adoption nonprofits work tirelessly to
+            provide care for the furry friends and local wildlife of the San
+            Diego community. These groups actively foster a culture of
+            compassion with hopes to encourage others to join in on their
+            mission with open hearts and loving homes for animals in need!
           </p>
         </div>
         <svg
@@ -163,9 +170,12 @@ const CentralThemes = () => {
         <div className="central-themes--grid-item">
           <h3>Community Relief</h3>
           <p>
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Id laoreet
-            faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est,
-            amet, viverra interdum eu mattis lobortis felis.
+            Community-focused nonprofit organizations here in San Diego tackle
+            basic needs insecurities, like food, housing, and healthcare crises
+            through accessible medical support, healthy meals, and services that
+            aid the search for affordable housing. With remarkable resilience
+            and innovation, these groups foster significant, empathetic change
+            in their local communities.
           </p>
         </div>
       </div>

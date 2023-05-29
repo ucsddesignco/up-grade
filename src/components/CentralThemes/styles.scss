@@ -24,6 +24,10 @@ div.central-themes {
 
 .central-themes--grid-item {
   grid-column: 2/-1;
+
+  & h3 + p {
+    margin-top: 0.75em;
+  }
 }
 
 .central-themes--grid-icon {
