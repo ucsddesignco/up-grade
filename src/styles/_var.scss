@@ -16,7 +16,6 @@ $primary-color: #19b000;
 $inside-background-color: #F3F3F3;
 $outside-background-color: #EBEBEB;
 $background-color: #F2F4F1;
-$background: #f2f4f1;
 
 // Fonts //
 $heading-font: "MBA Slice Mono", sans-serif;
@@ -41,10 +40,7 @@ $link-font: "NB International Mono", sans-serif;
   src: url("assets/fonts/NeueHaasDisplayMedium.ttf");
 }
 
-@font-face {
-  font-family: "NB International Mono";
-  src: url("assets/fonts/NB-Internatioinal-Mono.ttf");
-}
+
 
 
 // Animations

@@ -8,6 +8,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 5rem;
+  z-index: 0;
 
   @media screen and (max-width: 700px) {
     height: 100%;

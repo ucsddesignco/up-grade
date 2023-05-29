@@ -8,10 +8,15 @@
   li {
     list-style: none;
     display: flex;
+    justify-content: left;
     align-items: center;
     gap: 32px;
+    font-size: clamp(1rem, 3vw, 2rem) !important;
+    text-align: left !important;
+
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 50px;
+      
     }
     .overview--bulet-wrapper {
       width: 40px;

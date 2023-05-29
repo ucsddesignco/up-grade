@@ -4,6 +4,14 @@
 div.central-themes {
   margin-top: clamp(92px, 10vw, 256px);
 
+  h2 {
+    margin-bottom: calc(5vw + 1rem);
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 3rem;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     margin-top: 92px;
   }

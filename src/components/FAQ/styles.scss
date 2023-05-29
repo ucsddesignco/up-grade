@@ -2,9 +2,10 @@
 
 .faq-container {
   z-index: 0;
-  background-color: var.$background;
+  background-color: var.$background-color;
   height: 100%;
-
+  max-width: min(1300px, 90%);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,11 +23,12 @@
       align-items: left;
       justify-content: flex-end;
       width: 45vw;
+      position: relative;
 
       > h1 {
         font-family: var.$heading-font;
         color: var.$primary-color;
-        font-size: clamp(5rem, 40vw, 8rem);
+        font-size: clamp(2.5rem, 8vw, 8rem);
         font-weight: lighter;
         z-index: 2;
         stroke: var.$background 4px;
@@ -38,9 +40,9 @@
       > .desktop-squiggle {
         display: block;
         position: absolute;
-        width: 400px;
         height: auto;
-        transform: translate(-78px, 390px);
+        left: -60%;
+        top: 90%;
         z-index: 1;
       }
       > .mobile-squiggle {
@@ -49,28 +51,34 @@
     }
 
     > .right {
-      width: 45vw;
+      width: clamp(200px, 60vw, 800px);
+
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      position: relative;
 
       > .shape-one-cont {
-        width: 54px;
+        // width: 54px;
         height: auto;
-        transform: translate(calc(23vw - 480px), 110px);
         > .shape-one {
+          position: absolute;
+          left: 0;
+          top: 100px;
+          width: clamp(10px, 4vw, 60px);
           animation: float1 3.7s ease-in-out infinite;
           animation-delay: 0.1s;
         }
       }
 
       > .shape-two-cont {
-        transform: translate(calc(23vw - 400px), 40px);
         z-index: 2;
 
         > .shape-two {
-          animation-delay: 1s;
+          width: clamp(50px, 15vw, 160px);
+          left: 20%;
+          position: absolute;
           animation: float2 5s ease-in-out infinite;
           animation-delay: 0.7s;
         }
@@ -78,13 +86,21 @@
 
       > .shape-three {
         position: absolute;
-        transform: translate(calc(23vw - 240px), 150px);
+        width: clamp(300px, 30vw, 500px);
+        right: 0;
+        margin-top: 250px;
+        animation: float1 5s ease-in-out infinite;
+        animation-delay: 0.4s;
+
         z-index: 1;
       }
 
       > .shape-four-cont {
-        transform: translate(calc(23vw - 200px), -80px);
         .shape-four {
+          position: absolute;
+          margin-top: -20%;
+          right: 0;
+          width: clamp(15px, 5vw, 60px);
           animation: float3 4.2s ease-in-out infinite;
           animation-delay: 0.3s;
         }
@@ -93,18 +109,20 @@
   }
 
   > .section-two-accordion {
-    width: 90vw;
     z-index: 3;
+    position: relative;
 
     .accordion {
-      background-color: var.$background;
-      margin-bottom: 6rem;
+      background-color: var.$background-color;
       font-family: var.$p-font;
 
       .accordion-item {
         border: 3px solid var.$primary-color;
         display: block;
-        width: 90vw;
+
+        &:hover {
+          cursor: url('../../assets/cursor/custom-hover.png'), auto;
+        }
 
         .accordion-title {
           display: flex;
@@ -123,6 +141,7 @@
             font-size: 4rem;
             font-weight: lighter;
             width: 40px;
+            height: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -236,36 +255,32 @@
         }
       }
       .right {
-        width: 40vw;
+        margin-top: -130px;
         .shape-one-cont {
           width: 12px;
-          transform: translate(-60px, calc(50vw - 150px));
         }
-        .shape-two-cont {
-          transform: translate(-50px, calc(50vw - 170px));
-          width: 40px;
-        }
-        .shape-three {
-          width: 120px;
-          transform: translate(0px, calc(50vw - 150px));
+        .shape-two {
+          width: 50px !important;
+          margin-top: 50px;
         }
 
+        .shape-three {
+          width: 200px;
+        }
         .shape-four-cont {
-          width: 12px;
-          transform: translate(14px, calc(50vw - 200px));
+          .shape-four {
+            margin-top: 10px;
+          }
         }
       }
     }
     > .section-two-accordion {
-      width: 100vw;
+      position: relative;
       > .accordion {
         margin-bottom: 2rem;
         > .accordion-item {
           border-top: 2px solid var.$primary-color;
           border-bottom: 2px solid var.$primary-color;
-          border-left: none;
-          border-right: none;
-          width: 100vw;
 
           > .accordion-title {
             padding: 0 10vw 0 10vw;

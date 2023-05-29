@@ -1,9 +1,9 @@
 @use "var";
 
 body {
-  // max-width: 100% !important;
-  // overflow-x: clip !important;
-  background-color: var.$background;
+  background-color: var.$background-color;
+  cursor: url('assets/cursor/custom-cursor.png'), auto;
+
 }
 
 * {
@@ -92,4 +92,9 @@ a {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+
+button:hover, a:hover {
+  cursor: url('assets/cursor/custom-hover.png'), auto;
 }
