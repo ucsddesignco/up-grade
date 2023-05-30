@@ -48,7 +48,7 @@
   position: absolute;
   left: -5rem;
   margin-top: 2rem;
-  width: calc(5rem + 10vw);
+  width: calc(5rem + 8vw);
   animation: float1 3.7s ease-in-out infinite;
 
   @media screen and (max-width: 700px) {
@@ -62,12 +62,12 @@
 .happy-sticker {
   position: absolute;
   margin-bottom: 5rem;
-  right: -3rem;
-  width: calc(3rem + 5vw);
+  right: -2.5rem;
+  width: calc(3rem + 3vw);
   animation: float2 3.7s ease-in-out 0.5s infinite;
 
   @media screen and (max-width: 700px) {
-    right: -1rem;
+    right: -0.5rem;
     width: calc(3rem);
   }
 }
