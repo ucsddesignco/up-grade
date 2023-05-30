@@ -21,7 +21,7 @@
 p.why-apply--subtitle {
   font-family: var.$subheading-font;
   color: var.$primary-color;
-  font-size: clamp(1rem, 3vw, 2.25rem);
+  font-size: clamp(1.5rem, 1.5vw, 2.25rem);
   line-height: 100%;
   text-align: left;
   & + p {
@@ -29,6 +29,11 @@ p.why-apply--subtitle {
   }
   & + p:not(:last-child) {
     margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: clamp(1rem, 1.5vw, 2.25rem);
+
   }
 }
 

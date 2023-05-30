@@ -83,7 +83,7 @@ const Navbar = ({ refs, setHoveringNav }) => {
           </li>
           <li onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}>
             <div className="apply-container">
-              <button className="apply">Apply &nbsp;Here</button>
+              <button onClick={() => window.open('https://forms.gle/jYa6dZGv2hP7ZfMs6')} className="apply">Apply &nbsp;Here</button>
               <svg
                 className="star"
                 width="46"

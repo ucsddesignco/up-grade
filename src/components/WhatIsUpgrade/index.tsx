@@ -86,8 +86,8 @@ const WhatIsUpgrade = () => {
       >
         <Columns.Column>
           <p>
-            We've <a href="https://powerup.ucsddesign.co">Powered Up</a>...
-            we've <a href="https://buildup.ucsddesign.co">Built Up</a>... this
+            We've <a href="https://powerup.ucsddesign.co" target="_blank">Powered Up</a>...
+            we've <a href="https://buildup.ucsddesign.co" target="_blank">Built Up</a>... this
             summer, get ready to UP-Grade your skill set with our annual summer
             design program.
           </p>
