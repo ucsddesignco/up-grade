@@ -1,4 +1,4 @@
-@use "../../styles/var";
+@use '../../styles/var';
 
 .faq-container {
   z-index: 0;
@@ -6,10 +6,6 @@
   height: 100%;
   max-width: min(1300px, 90%);
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   > .section-one {
     display: flex;
     flex-direction: row;
@@ -24,7 +20,6 @@
       justify-content: flex-end;
       width: 45vw;
       position: relative;
-
       > h1 {
         font-family: var.$heading-font;
         color: var.$primary-color;
@@ -32,10 +27,6 @@
         font-weight: lighter;
         z-index: 2;
         stroke: var.$background-color 4px;
-        text-shadow: -4px -4px 0 var.$background-color, 0 -4px 0 var.$background-color,
-          4px -4px 0 var.$background-color, 4px 0 0 var.$background-color,
-          4px 4px 0 var.$background-color, 0 4px 0 var.$background-color,
-          -4px 4px 0 var.$background-color, -4px 0 0 var.$background-color; // leann added to add a stroke w/ background color
       }
       > .desktop-squiggle {
         display: block;
@@ -89,8 +80,6 @@
         width: clamp(300px, 30vw, 500px);
         right: 0;
         margin-top: 250px;
-        animation: float1 5s ease-in-out infinite;
-        animation-delay: 0.4s;
 
         z-index: 1;
       }
@@ -211,7 +200,6 @@
           padding: 0 4rem 0rem 4rem;
           max-height: 0;
           opacity: 0;
-          overflow: hidden;
           transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out,
             padding-bottom 0.4s ease-in-out;
           text-align: justify;
