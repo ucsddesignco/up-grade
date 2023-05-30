@@ -5,7 +5,6 @@
   .box-grid-svg {
     width: clamp(16px, 20vw, 150px);
     position: absolute;
-    left: 5%;
     top: 28%;
   }
 
@@ -14,8 +13,6 @@
     position: absolute;
     left: 25%;
     top: 28%;
-
-
   }
 
   .star-svg {
@@ -23,5 +20,21 @@
     position: absolute;
     left: 50%;
     top: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .what-is-upgrade {
+    .box-grid-svg {
+      left: 15%;
+    }
+
+    .CD-svg {
+      left: 45%;
+    }
+
+    .star-svg {
+      left: 65%;
+    }
   }
 }

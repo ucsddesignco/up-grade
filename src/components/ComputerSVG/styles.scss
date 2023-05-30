@@ -2,9 +2,9 @@
 @use '../../styles/subsections';
 
 .upgrade-computer-container {
-  margin-top: max(calc(6rem - 15vw), 20px);
+  margin-top: max(calc(6rem - 15vw), 40px);
   // margin-top: calc(10rem - 5vw);
-  width: max(calc(42rem - 10vw), 47vw);
+  width: max(calc(40rem - 10vw), 45vw);
   height: 462px;
   position: relative;
   display: flex;
@@ -16,7 +16,7 @@
   }
 
   @media screen and (max-width: 500px) {
-    margin-top: calc(20vw - 10rem);
+    margin-top: calc(20vw - 9rem);
     width: min(calc(30rem - 5vw), 80vw);
   }
   
