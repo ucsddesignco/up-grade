@@ -32,14 +32,8 @@ const WhyApply = () => {
           />
         </svg>
         <svg
-          className="animate1"
+          className="animate1 cd-svg"
           viewBox="0 0 324 328"
-          style={{
-            position: "absolute",
-            left: "-8%",
-            top: "42%",
-          }}
-          width="clamp(80px, 20vw, 360px)"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -54,13 +48,7 @@ const WhyApply = () => {
           />
         </svg>
         <svg
-          className="animate2"
-          style={{
-            position: "absolute",
-            left: "30%",
-            top: "50%",
-          }}
-          width="clamp(16px, 6vw, 64px)"
+          className="animate2 star1-svg"
           viewBox="0 0 87 87"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -73,13 +61,7 @@ const WhyApply = () => {
           />
         </svg>
         <svg
-          className="animate2"
-          style={{
-            position: "absolute",
-            left: "35%",
-            top: "60%",
-          }}
-          width="clamp(15px, 5vw, 48px)"
+          className="animate2 star2-svg"
           viewBox="0 0 87 87"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

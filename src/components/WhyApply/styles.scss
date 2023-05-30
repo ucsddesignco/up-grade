@@ -1,5 +1,5 @@
-@use "../../styles/var";
-@use "../../styles/subsections.scss";
+@use '../../styles/var';
+@use '../../styles/subsections.scss';
 
 .why-apply {
   h3 {
@@ -15,6 +15,46 @@
     position: relative;
     bottom: calc(-15vw + 5rem);
     right: calc(-1 * (10vw + 1rem));
+  }
+
+  .cd-svg {
+    position: absolute;
+    left: -8%;
+    top: 42%;
+    width: clamp(80px, 20vw, 360px);
+  }
+
+  .star1-svg {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: clamp(16px, 6vw, 64px);
+  }
+
+  .star2-svg {
+    position: absolute;
+    left: 35%;
+    top: 60%;
+    width: clamp(15px, 5vw, 48px);
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .svg-wrapper {
+      top: -10vw !important;
+    }
+      .cd-svg {
+        left: 13%;
+      }
+
+      .star1-svg {
+        left: 45%;
+      }
+
+      .star2-svg {
+        left: 50%;
+        top: 65%;
+      }
   }
 }
 
@@ -33,7 +73,6 @@ p.why-apply--subtitle {
 
   @media screen and (max-width: 600px) {
     font-size: clamp(1rem, 1.5vw, 2.25rem);
-
   }
 }
 
