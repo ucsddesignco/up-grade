@@ -1,2 +1,27 @@
-@use "../../styles/var";
-@use "../../styles/subsections.scss";
+@use '../../styles/var';
+@use '../../styles/subsections.scss';
+
+.what-is-upgrade {
+  .box-grid-svg {
+    width: clamp(16px, 20vw, 150px);
+    position: absolute;
+    left: 5%;
+    top: 28%;
+  }
+
+  .CD-svg {
+    width: clamp(80px, 20vw, 250px);
+    position: absolute;
+    left: 25%;
+    top: 28%;
+
+
+  }
+
+  .star-svg {
+    width: clamp(24px, 8vw, 72px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
