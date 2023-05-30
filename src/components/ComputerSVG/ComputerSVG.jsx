@@ -35,13 +35,17 @@ export default function ComputerSVG ({hoveringNav}) {
 
     //React strict mode will cause blinking issues so it's okay for production
     setInterval(function () {
-      leftEyeRef.current.setAttribute('ry', 0.5);
-      rightEyeRef.current.setAttribute('ry', 0.5);
       setTimeout(() => {
-        leftEyeRef.current.setAttribute('ry', 11.5);
-        rightEyeRef.current.setAttribute('ry', 11.5);
-      }, [200])
-    }, [(Math.random() * 5000) + 2000])
+        leftEyeRef.current.setAttribute('ry', 0.5);
+        rightEyeRef.current.setAttribute('ry', 0.5);
+        setTimeout(() => {
+          leftEyeRef.current.setAttribute('ry', 11.5);
+          rightEyeRef.current.setAttribute('ry', 11.5);
+        }, 200)
+
+      }, Math.random() * 2500 + 500)
+
+    }, 3000)
 
   }, [])
 
