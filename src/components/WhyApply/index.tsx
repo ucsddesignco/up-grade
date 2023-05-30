@@ -1,11 +1,10 @@
-import React from "react";
-import Columns from "../../libraryComponents/Columns";
-import "./styles.scss";
-import Google_Logo from '../../assets/companies/Google_Logo.svg'
-import Amazon_Logo from '../../assets/companies/Amazon_Logo.svg'
-import Microsoft_Logo from '../../assets/companies/Microsoft_Logo.svg'
-import Sony_Logo from '../../assets/companies/Sony_Logo.svg'
-
+import React from 'react';
+import Columns from '../../libraryComponents/Columns';
+import './styles.scss';
+import Google_Logo from '../../assets/companies/Google_Logo.svg';
+import Amazon_Logo from '../../assets/companies/Amazon_Logo.svg';
+import Microsoft_Logo from '../../assets/companies/Microsoft_Logo.svg';
+import Sony_Logo from '../../assets/companies/Sony_Logo.svg';
 
 const WhyApply = () => {
   return (
@@ -13,10 +12,10 @@ const WhyApply = () => {
       <div
         className="svg-wrapper"
         style={{
-          position: "absolute",
-          top: "calc(40px - 20vw)",
-          right: "-10vw",
-          width: "clamp(200px, 60vw, 800px)",
+          position: 'absolute',
+          top: 'calc(40px - 20vw)',
+          right: '-10vw',
+          width: 'clamp(200px, 60vw, 800px)',
         }}
       >
         <svg
@@ -79,11 +78,12 @@ const WhyApply = () => {
         <br />
         Apply?
       </h2>
-      <Columns
+      {/* <Columns
         className="subsection--columns"
         count={2}
         collapseBreakpoint={600}
       space={[80, 16]}
+      
       >
         <Columns.Column >
             <p className="why-apply--subtitle">
@@ -120,7 +120,56 @@ const WhyApply = () => {
               larger community!
             </p>
         </Columns.Column>
-      </Columns>
+      </Columns> */}
+
+      <div className="subsection--columns row-container" style={{ display: 'flex', flexDirection: 'column', gap: '50px' }}>
+        <div className="first-row" style={{display: 'flex', gap: '50px'}}>
+          <div style={{flex: "1" }}>
+            <p className="why-apply--subtitle">
+              UP-Grade your resume + portfolio
+            </p>
+            <p>
+              Gain real-world experience through a fully developed project and
+              stand out from other student designers with a personal story about
+              your involvement in the project process!
+            </p>
+          </div>
+
+          <div style={{flex: "1"}}>
+            <p className="why-apply--subtitle">
+              Put classroom knowledge to use in a real-world setting
+            </p>
+            <p>
+              Bring your knowledge of technical and soft skills (and all things
+              design process related) to active and practical use, further
+              refining your skills along the way!
+            </p>
+          </div>
+        </div>
+
+        <div className='second-row' style={{display: 'flex', gap: '50px'}}>
+          <div style={{flex: "1"}}>
+            <p className="why-apply--subtitle">
+              Network with peers and industry professionals
+            </p>
+            <p>
+              Collaborate with leaders in local nonprofit organizations, connect
+              with tech industry professionals, and get to know project mentors!
+            </p>
+          </div>
+          <div style={{flex: "1"}}>
+            <p className="why-apply--subtitle">
+              Create meaningful solutions for social impact nonprofits
+            </p>
+            <p>
+              Bring your visions to reality, design with intention,
+              problem-solve and overcome obstacles, and work to create lasting
+              change for a larger community!
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="why-apply--quotes">
         <h3>Here’s what previous participants had to say about the program:</h3>
         <Columns
@@ -158,39 +207,23 @@ const WhyApply = () => {
           at:
         </h3>
         <Columns
-          style={{marginTop: '5rem'}}
+          style={{ marginTop: '5rem' }}
           className="subsection--columns"
           count={4}
           collapseBreakpoint={0}
           space={[80, 16]}
         >
           <Columns.Column>
-            <img
-              src={Google_Logo}
-              alt="Google Logo"
-              width="100%"
-            />
+            <img src={Google_Logo} alt="Google Logo" width="100%" />
           </Columns.Column>
           <Columns.Column>
-            <img
-              src={Amazon_Logo}
-              alt="Amazon Logo"
-              width="100%"
-            />
+            <img src={Amazon_Logo} alt="Amazon Logo" width="100%" />
           </Columns.Column>
           <Columns.Column>
-            <img
-              src={Microsoft_Logo}
-              alt="Microsoft Logo"
-              width="100%"
-            />
+            <img src={Microsoft_Logo} alt="Microsoft Logo" width="100%" />
           </Columns.Column>
           <Columns.Column>
-            <img
-              src={Sony_Logo}
-              alt="Sony Logo"
-              width="100%"
-            />
+            <img src={Sony_Logo} alt="Sony Logo" width="100%" />
           </Columns.Column>
         </Columns>
       </div>

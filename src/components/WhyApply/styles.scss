@@ -9,7 +9,18 @@
 
   @media screen and (max-width: 600px) {
     margin-top: 92px;
+
+    .row-container {
+      gap: 25px !important;
+
+    }
+    .first-row, .second-row{
+      flex-direction: column;
+      gap: 25px !important;
+
+    }
   }
+
 
   .cloud-svg {
     position: relative;
