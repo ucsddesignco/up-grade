@@ -23,6 +23,7 @@ p.why-apply--subtitle {
   color: var.$primary-color;
   font-size: clamp(1rem, 3vw, 2.25rem);
   line-height: 100%;
+  text-align: left;
   & + p {
     margin-top: 0.75em;
   }
