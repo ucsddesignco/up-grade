@@ -26,9 +26,10 @@ const Hero = ({hoveringNav}) => {
     <div className="hero-container">
       <div className="center-text-container">
         <img className='dco-logo' src={DesignCo} alt="Design Co Logo" />
-        <svg  width={responsiveWidth} className="upgrade-text">
+        {/* <svg  width={responsiveWidth} className="upgrade-text">
           <text textLength={responsiveWidth} x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" className="stroke-behind">UP-GRADE</text>
-        </svg>
+        </svg> */}
+        <h1 className="upgrade-text">UP-GRADE</h1>
       </div>
       <ComputerSVG hoveringNav={hoveringNav}/>
 

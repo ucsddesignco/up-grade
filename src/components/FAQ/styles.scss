@@ -6,6 +6,7 @@
   height: 100%;
   max-width: min(1300px, 90%);
   margin: 0 auto;
+  margin-top: -5rem;
   > .section-one {
     display: flex;
     flex-direction: row;
@@ -80,7 +81,8 @@
         width: clamp(300px, 30vw, 500px);
         right: 0;
         margin-top: 250px;
-
+        animation: float3 3.8s ease-in-out infinite;
+        animation-delay: 0.9s;
         z-index: 1;
       }
 
@@ -223,6 +225,7 @@
 
 @media screen and (max-width: 800px) {
   .faq-container {
+    margin-top: 0;
     .section-one {
       height: 18vh;
       .left {

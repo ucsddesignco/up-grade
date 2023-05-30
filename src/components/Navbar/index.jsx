@@ -4,6 +4,14 @@ import './styles.scss';
 const Navbar = ({ refs, setHoveringNav }) => {
   const [open, setOpen] = useState();
 
+  const checkOverflow = (open) => {
+    if (open) {
+      document.body.style.overflow = ""
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+  }
+
   return (
     <div className="navbar-container">
       <div className="left">
@@ -14,7 +22,7 @@ const Navbar = ({ refs, setHoveringNav }) => {
       <div className="right">
         <button
           onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
-          onClick={() => setOpen(!open)}
+          onClick={() => {setOpen((open) => {checkOverflow(open); return !open}); }}
           aria-expanded={open}
           className="mobile-button"
         >

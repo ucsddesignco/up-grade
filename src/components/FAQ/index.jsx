@@ -14,23 +14,23 @@ const FAQ = () => {
     const FAQQuestions = [
         {
             title: "Who is eligible?",
-            answer: "Registration is open to UCSD students and recent graduates of all levels and backgrounds. We encourage everyone to apply and share their own unique perspectives, knowledge, and skills!",
+            answer: "Eligibility is offered to all UCSD students and recent graduates — of various backgrounds, experience levels, and majors! We encourage anyone interested to apply, to learn and offer their one-of-a-kind knowledge!",
         },
         {
             title: "What is the time commmitment?",
-            answer: "Up-Grade will require a 12-15 hour commitment per week, for 10 weeks.",
+            answer: "UP-Grade requires a 12-15 hour commitment per week, for 10 weeks.",
         },
         {
             title: "How many people will be accepted?",
-            answer: "Up-Grade will have around 6 student teams. Teams will have a minimum of 4 and a maximum of 6 members, so there will be a total of 24-36 participants",
+            answer: "UP-Grade will have 6 student teams, with 6 participants in each team — 36 participants total. For each topic, there will be 2 teams assigned.",
         },
         {
-            title: "How will upgraders be selected?",
+            title: "How will UP-Graders be selected?",
             answer: "We will be reviewing all the applications holistically and accepting students based on application responses, an interview process, past experience, and a desire to make an impact! (Interviews will take place a week after applications are closed).",
         },
         {
             title: "Who will my mentors be?",
-            answer: "More information about mentors will be released in the coming week(s). There will be 6-8 design mentors and 6-8 marketing mentors, with 2-3 mentors assigned to each team.",
+            answer: "All UP-Grade participants will work closely with industry professionals, gaining valuable mentorship and insight. More information about mentors will be released in the coming week(s).",
         },
         {
             title: "Can I request teammates?",
@@ -45,8 +45,6 @@ const FAQ = () => {
             answer: "Friday, June 9 at 11:59PM PT. Decisions will be sent out around a week after the application deadline.",
         },
     ];
-
-    
 
     return (
         <div className='faq-container'>
