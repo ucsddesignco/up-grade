@@ -6,23 +6,34 @@ const Navbar = ({ refs, setHoveringNav }) => {
 
   const checkOverflow = (open) => {
     if (open) {
-      document.body.style.overflow = ""
+      document.body.style.overflow = '';
     } else {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     }
-  }
+  };
 
   return (
     <div className="navbar-container">
       <div className="left">
-        <a onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)} className="logo" href="/">
+        <a
+          onMouseEnter={() => setHoveringNav(true)}
+          onMouseLeave={() => setHoveringNav(false)}
+          className="logo"
+          href="/"
+        >
           UP-GRADE
         </a>
       </div>
       <div className="right">
         <button
-          onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
-          onClick={() => {setOpen((open) => {checkOverflow(open); return !open}); }}
+          onMouseEnter={() => setHoveringNav(true)}
+          onMouseLeave={() => setHoveringNav(false)}
+          onClick={() => {
+            setOpen((open) => {
+              checkOverflow(open);
+              return !open;
+            });
+          }}
           aria-expanded={open}
           className="mobile-button"
         >
@@ -58,12 +69,14 @@ const Navbar = ({ refs, setHoveringNav }) => {
         <ul>
           <li>
             <button
-              onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
-              onClick={() =>
+              onMouseEnter={() => setHoveringNav(true)}
+              onMouseLeave={() => setHoveringNav(false)}
+              onClick={() => {
                 refs['overview'].current.scrollIntoView({
                   behavior: 'smooth',
-                })
-              }
+                });
+                setOpen(false);
+              }}
             >
               Overview
             </button>
@@ -71,27 +84,41 @@ const Navbar = ({ refs, setHoveringNav }) => {
 
           <li>
             <button
-              onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
-              onClick={() =>
-                refs['themes'].current.scrollIntoView({ behavior: 'smooth' })
-              }
+              onMouseEnter={() => setHoveringNav(true)}
+              onMouseLeave={() => setHoveringNav(false)}
+              onClick={() => {
+                refs['themes'].current.scrollIntoView({ behavior: 'smooth' });
+                setOpen(false);
+              }}
             >
               Themes
             </button>
           </li>
           <li>
             <button
-              onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}
-              onClick={() =>
-                refs['FAQ'].current.scrollIntoView({ behavior: 'smooth' })
-              }
+              onMouseEnter={() => setHoveringNav(true)}
+              onMouseLeave={() => setHoveringNav(false)}
+              onClick={() => {
+                refs['FAQ'].current.scrollIntoView({ behavior: 'smooth' });
+                setOpen(false);
+              }}
             >
               FAQ
             </button>
           </li>
-          <li onMouseEnter={() => setHoveringNav(true)}  onMouseLeave={() => setHoveringNav(false)}>
+          <li
+            onMouseEnter={() => setHoveringNav(true)}
+            onMouseLeave={() => setHoveringNav(false)}
+          >
             <div className="apply-container">
-              <button onClick={() => window.open('https://forms.gle/jYa6dZGv2hP7ZfMs6')} className="apply">Apply &nbsp;Here</button>
+              <button
+                onClick={() =>
+                  window.open('https://forms.gle/jYa6dZGv2hP7ZfMs6')
+                }
+                className="apply"
+              >
+                Apply &nbsp;Here
+              </button>
               <svg
                 className="star"
                 width="46"
