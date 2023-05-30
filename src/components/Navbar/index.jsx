@@ -72,9 +72,10 @@ const Navbar = ({ refs, setHoveringNav }) => {
               onMouseEnter={() => setHoveringNav(true)}
               onMouseLeave={() => setHoveringNav(false)}
               onClick={() => {
-                refs['overview'].current.scrollIntoView({
-                  behavior: 'smooth',
-                });
+                window.scrollTo({top: refs['overview'].current.getBoundingClientRect().top + window.pageYOffset - 100, behavior: 'smooth'})
+                // refs['overview'].current.scrollIntoView({
+                //   behavior: 'smooth',
+                // });
                 setOpen(false);
               }}
             >
@@ -87,7 +88,7 @@ const Navbar = ({ refs, setHoveringNav }) => {
               onMouseEnter={() => setHoveringNav(true)}
               onMouseLeave={() => setHoveringNav(false)}
               onClick={() => {
-                refs['themes'].current.scrollIntoView({ behavior: 'smooth' });
+                window.scrollTo({top: refs['themes'].current.getBoundingClientRect().top + window.pageYOffset - 100, behavior: 'smooth'})
                 setOpen(false);
               }}
             >
@@ -99,7 +100,7 @@ const Navbar = ({ refs, setHoveringNav }) => {
               onMouseEnter={() => setHoveringNav(true)}
               onMouseLeave={() => setHoveringNav(false)}
               onClick={() => {
-                refs['FAQ'].current.scrollIntoView({ behavior: 'smooth' });
+                window.scrollTo({top: refs['FAQ'].current.getBoundingClientRect().top + window.pageYOffset, behavior: 'smooth'})
                 setOpen(false);
               }}
             >
